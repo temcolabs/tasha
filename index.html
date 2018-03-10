@@ -8,13 +8,20 @@
 		<!-- Bootstrap core CSS -->
 		<link href="css/bootstrap.css" rel="stylesheet">
 
+		<!-- google fonts -->
+		<link href="https://fonts.googleapis.com/css?family=Sarala:700" rel="stylesheet">
+
+		<!-- google icons -->
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+					rel="stylesheet">
+
 		<!-- Custom styles for this template -->
 		<link href="app.css" rel="stylesheet">
 	</head>
 	<body ng-app="TashaApp" ng-controller="TashaCtrl">
 
 		<!-- header -->
-		<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+		<nav class="navbar navbar-expand-md navbar-dark fixed-top transparent">
 			<a class="navbar-brand" href="#">Temco</a>
 			<button class="navbar-toggler"
 							type="button"
@@ -37,7 +44,7 @@
 						<a class="nav-link" href="#">Timeline</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="#">Token</a>
+						<a class="nav-link" href="#test">Token</a>
 					</li>
 					<li class="nav-item">
 						<a class="nav-link" href="#">Roadmap</a>
@@ -81,33 +88,31 @@
 			<div class="container">
 
 				<div class="spacer s0"></div>
-				<div id="parallax1" class="parallaxParent">
-					<div style="background-image: url(http://scrollmagic.io/img/example_parallax_bg1.png);"></div>
+				<div id="parallax1"
+						 class="parallaxParent"
+						 style="background-color:black;">
+					<div style="background-image: url(img/scene1.jpg);
+											background-size:1920px;
+											opacity:0.3;"></div>
 				</div>
 				<div class="spacer s1">
-					<div class="box2 blue">
-						<p>Content 1</p>
-						<a href="#" class="viewsource">view source</a>
-					</div>
 				</div>
 				<div class="spacer s0"></div>
 				<div id="parallax2" class="parallaxParent">
-					<div style="background-image: url(http://scrollmagic.io/img/example_parallax_bg2.png);"></div>
+					<div style="background-image: url(img/scene2.jpg);
+											background-size:1920px;"></div>
 				</div>
 				<div class="spacer s1">
-					<div class="box2 blue">
-						<p>Content 2</p>
-						<a href="#" class="viewsource">view source</a>
-					</div>
 				</div>
 				<div class="spacer s0"></div>
 				<div id="parallax3" class="parallaxParent">
-					<div style="background-image: url(http://scrollmagic.io/img/example_parallax_bg3.png);"></div>
+					<div style="background-image: url(img/scene3.jpg);
+											background-size:1920px;"></div>
 				</div>
 				<div class="spacer s2"></div>
 
 				<!-- Example row of columns -->
-				<div class="row">
+				<div class="row section" id="test">
 					<div class="col-md-4">
 						<h2>Heading</h2>
 						<p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
@@ -124,17 +129,63 @@
 						<p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
 					</div>
 				</div>
-
-				<hr>
-
 			</div>
 			<!-- /container -->
 
 		</main>
 
+		<!-- footer -->
 		<footer class="container">
-			<p>&copy; Company 2010-2018</p>
+			<div class="row">
+				<div class="col-md-4 col">
+					<div>
+						Temco
+					</div>
+					<div>
+						Supply Chain Reimagined
+					</div>
+					<div style="margin-top:20px;">
+						<i class="material-icons">location_on</i> Seoul, Korea
+					</div>
+					<div>
+						<i class="material-icons">phone</i> 82-0000-0000-0000
+					</div>
+					<div>
+						<i class="material-icons">mail_outline</i> info@temco.com
+					</div>
+				</div>
+				<div class="col-md-4 col">
+					<div>
+						Home
+					</div>
+					<div>
+						About
+					</div>
+					<div>
+						Technology
+					</div>
+					<div>
+						Token Model
+					</div>
+					<div>
+						Roadmap
+					</div>
+					<div>
+						Team
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div>
+						Contact Us
+					</div>
+				</div>
+			</div>
 		</footer>
+
+		<div class="copyright">
+			&copy; 2018 Copyright Temco
+		</div>
+		<!-- end of footer -->
 
 		<!-- Bootstrap core JavaScript
 		================================================== -->

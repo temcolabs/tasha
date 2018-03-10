@@ -1,3 +1,64 @@
+body{
+	font-family: 'Sarala', sans-serif;
+	background-color:#333;
+}
+
+.transparent{
+	background-color:transparent !important;
+}
+
+.navbar, .dropdown-menu, footer, .copyright{
+	text-transform:uppercase;
+	font-size:12px;
+}
+
+.navbar{
+	background-color:#333;
+	height:75px;
+}
+
+.nav-item{
+	margin-left:10px;
+}
+
+main{
+	background-color:#fff;
+}
+
+main .container{
+	max-width:100% !important;
+	padding:0px;
+}
+
+main .section{
+	padding:20px;
+}
+
+footer, .copyright{
+	color:#fff;
+}
+
+footer{
+	margin:25px 0 15px 0;
+}
+
+footer .col > div{
+	margin-bottom:10px;
+}
+
+footer .material-icons{
+	font-size:14px;
+	position:relative;
+	top:3px;
+	margin-right:10px;
+
+}
+.copyright{
+	text-align:center;
+	background-color:#1A1A1A;
+	padding:10px 0;
+}
+
 .parallaxParent {
 	height: 100vh;
 	overflow: hidden;
@@ -7,3 +68,4 @@
 	position: relative;
 	top: -100%;
 }
+
