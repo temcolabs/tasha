@@ -9,27 +9,37 @@ app.controller('TashaCtrl', function ($scope) {
   }
 
   //parallax
+
   // init controller
-  var controller = new ScrollMagic.Controller({globalSceneOptions: {triggerHook: "onEnter", duration: "200%"}});
+  //var controller = new ScrollMagic.Controller({globalSceneOptions: {triggerHook: "onEnter", duration: "200%"}});
+  var controller = new ScrollMagic.Controller();
 
   // build scenes
-  var scene1 = new ScrollMagic.Scene({triggerElement: "#parallax1"})
-    .setTween("#parallax1 > div", {y: "80%", ease: Linear.easeNone})
-    //.addIndicators()
+
+  var scene1 = new ScrollMagic.Scene({
+    triggerElement: "#parallax1",
+  })
+    //.setTween("#parallax1 > div", {y: "80%", ease: Linear.easeNone})
+    .addIndicators()
     .addTo(controller);
 
-  var scene2 = new ScrollMagic.Scene({triggerElement: "#parallax2"})
-    .setTween("#parallax2 > div", {y: "80%", ease: Linear.easeNone})
-    //.addIndicators()
+
+  var scene2 = new ScrollMagic.Scene({
+    triggerElement: "#parallax2"
+    //,offset:-100
+  }).setVelocity("h1", {opacity: 1.0}, {duration: 400})
+    .setClassToggle(".navbar", "navbar-color")
+    .addIndicators()
     .addTo(controller);
 
   var scene3 = new ScrollMagic.Scene({triggerElement: "#parallax3"})
-    .setTween("#parallax3 > div", {y: "80%", ease: Linear.easeNone})
-    //.addIndicators()
+    //.setVelocity("#animate", {opacity: 0}, {duration: 400})
+    .addIndicators()
     .addTo(controller);
 
   function changeNavBarBg(event) {
-    if(event.scrollPos >= event.endPos - 75){
+    console.info(event);
+    if(event.type === 'enter'){
       $('nav.navbar').removeClass('transparent');
     }
     else{
@@ -37,6 +47,6 @@ app.controller('TashaCtrl', function ($scope) {
     }
   }
   // add listeners
-  scene1.on("update", changeNavBarBg);
+  //scene2.on("enter leave", changeNavBarBg);
 
 });

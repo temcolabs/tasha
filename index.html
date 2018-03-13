@@ -21,7 +21,7 @@
 	<body ng-app="TashaApp" ng-controller="TashaCtrl">
 
 		<!-- header -->
-		<nav class="navbar navbar-expand-md navbar-dark fixed-top transparent">
+		<nav class="navbar navbar-expand-md navbar-dark fixed-top">
 			<a class="navbar-brand" href="#">Temco</a>
 			<button class="navbar-toggler"
 							type="button"
@@ -91,44 +91,38 @@
 				<div id="parallax1"
 						 class="parallaxParent"
 						 style="background-color:black;">
-					<div style="background-image: url(img/scene1.jpg);
-											background-size:1920px;
-											opacity:0.3;"></div>
+					</div>
 				</div>
 				<div class="spacer s1">
 				</div>
 				<div class="spacer s0"></div>
 				<div id="parallax2" class="parallaxParent">
-					<div style="background-image: url(img/scene2.jpg);
-											background-size:1920px;"></div>
+					<h1>I am scene #2</h1>
 				</div>
 				<div class="spacer s1">
 				</div>
 				<div class="spacer s0"></div>
 				<div id="parallax3" class="parallaxParent">
-					<div style="background-image: url(img/scene3.jpg);
-											background-size:1920px;"></div>
+					<!-- Example row of columns -->
+					<div class="row section" id="test">
+						<div class="col-md-4">
+							<h2>Heading</h2>
+							<p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+							<p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+						</div>
+						<div class="col-md-4">
+							<h2>Heading</h2>
+							<p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+							<p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+						</div>
+						<div class="col-md-4">
+							<h2>Heading</h2>
+							<p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+							<p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+						</div>
+					</div>
 				</div>
 				<div class="spacer s2"></div>
-
-				<!-- Example row of columns -->
-				<div class="row section" id="test">
-					<div class="col-md-4">
-						<h2>Heading</h2>
-						<p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-						<p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
-					</div>
-					<div class="col-md-4">
-						<h2>Heading</h2>
-						<p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-						<p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
-					</div>
-					<div class="col-md-4">
-						<h2>Heading</h2>
-						<p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-						<p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
-					</div>
-				</div>
 			</div>
 			<!-- /container -->
 
@@ -198,9 +192,11 @@
 		<script src="js/bootstrap.bundle.js"></script>
 
 		<!-- parallax -->
+		<script src="http://scrollmagic.io/js/lib/velocity.min.js"></script>
 		<script src="http://scrollmagic.io/js/lib/greensock/TweenMax.min.js"></script>
 		<script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js"></script>
 		<script src="http://scrollmagic.io/scrollmagic/uncompressed/plugins/animation.gsap.js"></script>
+		<script src="http://scrollmagic.io/scrollmagic/uncompressed/plugins/animation.velocity.js"></script>
 		<script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.min.js"></script>
 
 		<!-- Custom JavaScript for this template -->
