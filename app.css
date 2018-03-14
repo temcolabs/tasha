@@ -1,6 +1,6 @@
 body{
 	font-family: 'Sarala', sans-serif;
-	background-color:#333;
+	background-color:#202020;
 }
 
 .transparent{
@@ -9,16 +9,27 @@ body{
 
 .navbar, .dropdown-menu, footer, .copyright{
 	text-transform:uppercase;
-	font-size:12px;
+	font-size:8px;
 }
 
 .navbar{
 	background-color:transparent;
-	height:75px;
+	height:50px;
 }
 
 .navbar-color{
-	background-color:#333;
+	background-color: #202020;
+	//border: solid 1px #85c0cb;
+}
+
+.nav-link{
+	color:#fff !important;
+	margin-right: 0.5rem;
+	margin-left: 0.5rem;
+}
+
+.navbar .active a{
+	border-bottom:1.5px #72c2cc solid;
 }
 
 .nav-item{
@@ -47,8 +58,16 @@ footer{
 	margin:25px 0 15px 0;
 }
 
-footer .col > div{
-	margin-bottom:10px;
+footer .col-left > div{
+	margin-bottom:5px;
+}
+
+footer .col-center{
+	padding-left:20px;
+}
+
+footer .col-center > div{
+	margin-bottom:15px;
 }
 
 footer .material-icons{
@@ -60,9 +79,13 @@ footer .material-icons{
 }
 .copyright{
 	text-align:center;
-	background-color:#1A1A1A;
-	padding:10px 0;
+	background-color:#000;
+	color:#7b7b7b;
+	padding:6px 0;
 }
+
+
+/* parallax */
 
 .parallaxParent{
 	padding:40px;
@@ -87,3 +110,15 @@ footer .material-icons{
 	color:#fff;
 
 }
+
+/* end of parallax */
+
+/* zeplin */
+
+.TEMCO-LOGO {
+	width: 70.5px;
+	height: 19px;
+	object-fit: contain;
+}
+
+/* end of zeplin */

@@ -2,6 +2,43 @@
 var app = angular.module('TashaApp', []);
 app.controller('TashaCtrl', function ($scope) {
 
+  //navbar
+  $scope.navBars = [
+    {
+      title:'about',
+      href:'#'
+    },
+    {
+      title:'whitepaper',
+      href:'#'
+    },
+    {
+      title:'technology',
+      href:'#'
+    },
+    {
+      title:'prototype',
+      href:'#'
+    },
+    {
+      title:'token',
+      href:'#'
+    },
+    {
+      title:'team',
+      href:'#'
+    },
+    {
+      title:'notice',
+      href:'#'
+    }
+  ];
+
+  $scope.navClicked = function($event){
+    $('.nav-item').removeClass('active');
+    $($event.currentTarget).parent().addClass('active');
+  };
+
   //language switcher
   $scope.lang = 'Eng';
   $scope.changeLang = function(lang){

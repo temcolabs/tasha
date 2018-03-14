@@ -22,63 +22,30 @@
 
 		<!-- header -->
 		<nav class="navbar navbar-expand-md navbar-dark fixed-top">
-			<a class="navbar-brand" href="#">Temco</a>
-			<button class="navbar-toggler"
-							type="button"
-							data-toggle="collapse"
-							data-target="#navbarsExampleDefault"
-							aria-controls="navbarsExampleDefault"
-							aria-expanded="false"
-							aria-label="Toggle navigation">
-				<span class="navbar-toggler-icon"></span>
-			</button>
-			<div class="collapse navbar-collapse" id="navbarsExampleDefault">
-				<ul class="navbar-nav ml-auto">
-					<li class="nav-item active">
-						<a class="nav-link" href="#">Ecosystem</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#">Prototype</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#">Timeline</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#test">Token</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#">Roadmap</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#">Team</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#">Login/Sign Up</a>
-					</li>
-					<li class="nav-item dropdown">
-						<a class="nav-link dropdown-toggle"
-							 href="http://example.com"
-							 id="language"
-							 data-toggle="dropdown"
-							 aria-haspopup="true"
-							 aria-expanded="false">
-								{{lang}}
-						</a>
-						<div class="dropdown-menu" aria-labelledby="language">
-							<a class="dropdown-item"
-								 href="#"
-								 ng-click="changeLang('Kor')">
-								Kor
-							</a>
-							<a class="dropdown-item"
-								 href="#"
-								 ng-click="changeLang('Eng')">
-								Eng
-							</a>
-						</div>
-					</li>
-				</ul>
-			</div>
+
+				<a class="navbar-brand" href="#">
+					<img src="img/temco-logo.png"
+							 srcset="img/temco-logo@2x.png 2x,
+             img/temco-logo@3x.png 3x"
+							 class="TEMCO-LOGO">
+				</a>
+				<button class="navbar-toggler"
+								type="button"
+								data-toggle="collapse"
+								data-target="#navbarsExampleDefault"
+								aria-controls="navbarsExampleDefault"
+								aria-expanded="false"
+								aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarsExampleDefault">
+					<ul class="navbar-nav ml-auto">
+						<li class="nav-item" ng-repeat="item in navBars">
+							<a class="nav-link" href="{{item.href}}" ng-click="navClicked($event)">{{item.title}}</a>
+						</li>
+					</ul>
+				</div>
+
 		</nav>
 		<!-- end of header -->
 
@@ -131,12 +98,15 @@
 		<!-- footer -->
 		<footer class="container">
 			<div class="row">
-				<div class="col-md-4 col">
+				<div class="col-md-4 col-left">
 					<div>
-						Temco
+						<img src="img/temco-logo.png"
+								 srcset="img/temco-logo@2x.png 2x,
+             img/temco-logo@3x.png 3x"
+								 class="TEMCO-LOGO">
 					</div>
-					<div>
-						Supply Chain Reimagined
+					<div style="margin-top:10px;">
+						Supply Chain Management Reimagined
 					</div>
 					<div style="margin-top:20px;">
 						<i class="material-icons">location_on</i> Seoul, Korea
@@ -148,24 +118,9 @@
 						<i class="material-icons">mail_outline</i> info@temco.com
 					</div>
 				</div>
-				<div class="col-md-4 col">
-					<div>
-						Home
-					</div>
-					<div>
-						About
-					</div>
-					<div>
-						Technology
-					</div>
-					<div>
-						Token Model
-					</div>
-					<div>
-						Roadmap
-					</div>
-					<div>
-						Team
+				<div class="col-md-4 col-center">
+					<div ng-repeat="item in navBars">
+						{{item.title}}
 					</div>
 				</div>
 				<div class="col-md-4">
