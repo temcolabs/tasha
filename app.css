@@ -1,3 +1,6 @@
+html,body{
+	max-width:1037.5px;
+}
 body{
 	font-family: 'Sarala', sans-serif;
 	background-color:#202020;
@@ -15,6 +18,7 @@ body{
 .navbar{
 	background-color:transparent;
 	height:50px;
+	max-width:1037.5px;
 }
 
 .navbar-color{
@@ -88,14 +92,14 @@ footer .material-icons{
 /* parallax */
 
 .parallaxParent{
-	padding:40px;
+	//padding:40px;
 }
 
 #parallax1{
-	height:1000px;
-	background-image: url(img/scene1.jpg);
-	background-size:1920px;
-	opacity:0.3;
+	//height:601.5px;
+	//background-image: url(img/base@3x.png);
+	//background-size:1920px;
+	//opacity:0.3;
 }
 
 #parallax2{
@@ -118,6 +122,20 @@ footer .material-icons{
 .TEMCO-LOGO {
 	width: 70.5px;
 	height: 19px;
+	object-fit: contain;
+}
+
+base {
+	width: 960px;
+	height: 601.5px;
+	object-fit: contain;
+	background-color: #344765;
+	background-color: var(--dark-grey-blue);
+}
+
+.CUBE-2 {
+	width: 257.5px;
+	height: 473px;
 	object-fit: contain;
 }
 
