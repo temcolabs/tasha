@@ -1,9 +1,15 @@
-html,body{
-	max-width:1037.5px;
+main, .navbar, .parallax, #ploygon4, #base3{
+	max-width:1920px;
 }
+
 body{
-	font-family: 'Sarala', sans-serif;
-	background-color:#202020;
+	font-family: 'Raleway', sans-serif;
+	background-color:#fff;
+}
+
+.navbar, footer{
+	font-family: 'Montserrat', sans-serif;
+	font-weight:bold;
 }
 
 .transparent{
@@ -17,19 +23,56 @@ body{
 
 .navbar{
 	background-color:transparent;
-	height:50px;
-	max-width:1037.5px;
+	height:75px;
+	width:100%;
+	padding:0
 }
 
-.navbar-color{
+.navbar-brand {
+	padding-left:10px;
+}
+
+.navbar-toggler {
+	margin-right:5px;
+}
+
+.nav-link, footer a, .navbar-brand{
+	cursor:pointer;
+}
+
+.navbar-color, .navbar-color .navbar-collapse {
 	background-color: #202020;
-	//border: solid 1px #85c0cb;
+}
+
+#navContainer {
+	max-width: 1070px;
+	width:100%;
+	height:50px;
+	position: relative;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+	padding: 0.5rem 0;
+	margin: 0 auto;
+}
+
+.fixed-top{
+	right:inherit;
+	left:inherit;
 }
 
 .nav-link{
 	color:#fff !important;
-	margin-right: 0.5rem;
-	margin-left: 0.5rem;
+	//margin-right: 0.5rem;
+	padding-left: 25px;
 }
 
 .navbar .active a{
@@ -42,6 +85,7 @@ body{
 
 main{
 	background-color:#fff;
+	margin:0 auto;
 }
 
 main .container{
@@ -50,16 +94,21 @@ main .container{
 	background-color:#000;
 }
 
-main .section{
-	padding:20px;
-}
-
 footer, .copyright{
 	color:#fff;
 }
 
 footer{
-	margin:25px 0 15px 0;
+	padding: 25px 60px 15px 60px;
+	background-color:#202020;
+}
+
+footer a, footer a:hover{
+	color:white;
+}
+
+footer .col-md-4{
+	padding-bottom:20px;
 }
 
 footer .col-left > div{
@@ -67,11 +116,19 @@ footer .col-left > div{
 }
 
 footer .col-center{
-	padding-left:20px;
+
 }
 
 footer .col-center > div{
 	margin-bottom:15px;
+}
+
+footer .contactUs {
+	margin-top: 20px;
+	border: 1px dotted #ccc;
+	text-align: center;
+	height: 165px;
+	padding-top: 70px;
 }
 
 footer .material-icons{
@@ -81,6 +138,15 @@ footer .material-icons{
 	margin-right:10px;
 
 }
+
+.social-media {
+	margin-top:20px;
+}
+
+.social-media img {
+	width:20px;
+	margin-right:5px;
+}
 .copyright{
 	text-align:center;
 	background-color:#000;
@@ -88,34 +154,199 @@ footer .material-icons{
 	padding:6px 0;
 }
 
-
-/* parallax */
-
-.parallaxParent{
-	//padding:40px;
+.accent1 {
+	font-weight:bold;
+	font-size:50px;
+	text-transform:uppercase;
+	letter-spacing: -1.3px;
 }
 
+.accent2 {
+	font-weight:bold;
+	font-size:60px;
+	text-transform:uppercase;
+	margin-bottom:5px;
+}
+
+.accent3 {
+	font-weight:bold;
+	font-size:48px;
+	letter-spacing: -1.2px;
+	text-transform:uppercase;
+	margin-bottom:30px;
+	color:#304766;
+}
+
+.accent4 {
+	font-weight:bold;
+	font-size:22px;
+	text-transform:uppercase;
+	color:#344765;
+}
+
+.normal {
+	font-weight:600;
+	font-size:16px;
+	text-transform:uppercase;
+	margin-bottom:5px;
+	letter-spacing: 1.2px;
+}
+
+.normal2{
+	font-weight:600;
+	font-size:16px;
+	line-height: 1.38;
+	color:#7f7f7f
+}
+
+.icon-container {
+	flex-wrap:nowrap;
+}
+
+.icon-container img{
+	margin:0 20px;
+}
+
+.icon-container div{
+	margin-bottom:10px;
+}
+.icon-container div:first-child {
+	min-width:100px;
+}
+.max{
+	width:100%;
+	max-width:450px;
+}
+
+.align-right{
+	text-align:right;
+}
+
+.bright{
+	color: #effbfd;
+}
+
+.light-blue{
+	color: #b9d8dd;
+}
+
+.download{
+	font-family: Montserrat;
+	font-size: 18px;
+	letter-spacing: 0.9px;
+	font-weight:600;
+	color: #575757;
+}
+
+.download2{
+	font-family: Montserrat;
+	font-size: 14px;
+	font-weight: 600;
+	line-height: 1.57;
+	color: #7d888a;
+}
+/* parallax */
+
+.pin{
+	position: relative;
+	top: -75px;
+}
+.parallax .content{
+	max-width:1070px;
+	margin:0 auto;
+	padding:10px 10px;
+	opacity:0;
+}
+
+
 #parallax1{
-	//height:601.5px;
-	//background-image: url(img/base@3x.png);
-	//background-size:1920px;
-	//opacity:0.3;
+	background-image: url(img/par1.png);
+	background-position-x:left;
+	min-height:1100px;
+	color:#fff;
+	padding-top:60px;
 }
 
 #parallax2{
-	height:400px;
+	background-image: url(img/par2.png);
+	background-position-x:center;
+	min-height:1000px;
+	margin-top:-400px;
+	padding-top:250px;
 }
 
-#parallax2 h1{
-	opacity: 0;
-}
 #parallax3{
-	background-color:#000;
+	background-image: url(img/par3.png);
+	background-position-x:center;
+	background-position-y: bottom;
+	background-color:#fff;
 	color:#fff;
+	height:900px;
+}
 
+#parallax4 {
+	background-color:#fff;
+	height: 400px;
+}
+
+#parallax5 {
+	background-image: url(img/par5.png);
+	background-color:#fff;
+	background-position-x:center;
+	padding-top:250px;
+	height: 1000px;
+}
+
+#parallax6 {
+	background-image: url(img/par6.png);
+	background-position-x:left;
+	margin-top:-350px;
+	height: 1430px;
+	position:relative;
+	z-index:1000;
+	padding-top:300px;
+}
+
+#parallax7 {
+	background-image: url(img/par7.png);
+	background-color:#fff;
+	background-position-x:center;
+	height: 1180px;
+	position:relative;
+	z-index:999;
+	margin-top:-325px;
+	padding-top:300px;
+}
+
+#parallax8 {
+	background-color:#fff;
+	height: 500px;
+}
+
+#parallax9 {
+	background:url('img/par9.png');
+	background-color:#fff;
+	background-position-x:center;
+	height:2547px;
+	padding-top:150px;
+}
+
+#parallax10 {
+	background:url('img/par10.png');
+	background-position-x:center;
+	margin-top: -375px;
+	height:4190px;
+	background-color:#fff;
+	padding-top:200px;
+}
+
+#parallax11 {
+	height:600px;
+	background-color:#fff;
 }
 
 /* end of parallax */
+
 
 /* zeplin */
 
@@ -126,11 +357,15 @@ footer .material-icons{
 }
 
 base {
-	width: 960px;
+	width: 1920px;
 	height: 601.5px;
 	object-fit: contain;
 	background-color: #344765;
 	background-color: var(--dark-grey-blue);
+}
+
+.CUBE {
+	object-fit: contain;
 }
 
 .CUBE-2 {
@@ -139,4 +374,47 @@ base {
 	object-fit: contain;
 }
 
+.BINARY-CODE {
+	object-fit: contain;
+}
+
+.POLYGON {
+	width: 1920px;
+	height: 223.5px;
+	object-fit: contain;
+	background-color: #effbfd;
+	background-color: var(--duck-egg-blue);
+	position:absolute;
+	margin-top:-220px;
+	z-index:999;
+}
+
+.THICK-LINE{
+	position:absolute;
+	top:504px;
+	width:100%;
+	display:none;
+}
 /* end of zeplin */
+
+/* mobile */
+
+@media only screen and (max-width: 768px) {
+	.hide-mobile{
+		display:none;
+	}
+
+	.parallax .content{
+		max-width:1070px;
+		margin:0 auto;
+		padding:10px 20px;
+	}
+
+	.navbar-collapse {
+		background-color: #202020 !important;
+	}
+
+}
+
+
+/* end of mobile */
