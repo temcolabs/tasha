@@ -5,11 +5,18 @@ main, .navbar, .parallax, #ploygon4, #base3{
 body{
 	font-family: 'Raleway', sans-serif;
 	background-color:#fff;
+	overflow-x:hidden;
+	min-width:640px;
 }
 
 .navbar, footer{
-	font-family: 'Montserrat', sans-serif;
-	font-weight:bold;
+	font-family: Montserrat;
+	font-weight: bold;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 2.71;
+	letter-spacing: normal;
+	text-align: left;
 }
 
 .transparent{
@@ -18,26 +25,39 @@ body{
 
 .navbar, .dropdown-menu, footer, .copyright{
 	text-transform:uppercase;
-	font-size:8px;
+	font-size:14px;
 }
 
 .navbar{
 	background-color:transparent;
-	height:75px;
 	width:100%;
-	padding:0
-}
-
-.navbar-brand {
-	padding-left:10px;
+	padding:0;
+	//height:75px;
 }
 
 .navbar-toggler {
-	margin-right:5px;
+	margin-right:20px;
 }
 
+.nav-link{
+	padding-top:0px;
+	padding-bottom:0px;
+}
 .nav-link, footer a, .navbar-brand{
 	cursor:pointer;
+}
+
+.navbar-brand{
+	padding-left:20px;
+}
+
+.nav-item:last-child{
+	padding-right:20px;
+}
+
+.nav-item:last-child a{
+	margin-right:0px;
+	padding-right:0px !important;
 }
 
 .navbar-color, .navbar-color .navbar-collapse {
@@ -45,9 +65,7 @@ body{
 }
 
 #navContainer {
-	max-width: 1070px;
 	width:100%;
-	height:50px;
 	position: relative;
 	display: -webkit-box;
 	display: -ms-flexbox;
@@ -60,8 +78,10 @@ body{
 	-webkit-box-pack: justify;
 	-ms-flex-pack: justify;
 	justify-content: space-between;
-	padding: 0.5rem 0;
+	//padding: 0 20px;
 	margin: 0 auto;
+	height:75px;
+	vertical-align: middle;
 }
 
 .fixed-top{
@@ -91,7 +111,7 @@ main{
 main .container{
 	max-width:100% !important;
 	padding:0px;
-	background-color:#000;
+	background-color:#fff;
 }
 
 footer, .copyright{
@@ -136,7 +156,6 @@ footer .material-icons{
 	position:relative;
 	top:3px;
 	margin-right:10px;
-
 }
 
 .social-media {
@@ -154,49 +173,31 @@ footer .material-icons{
 	padding:6px 0;
 }
 
-.accent1 {
-	font-weight:bold;
-	font-size:50px;
-	text-transform:uppercase;
-	letter-spacing: -1.3px;
-}
-
-.accent2 {
-	font-weight:bold;
-	font-size:60px;
-	text-transform:uppercase;
-	margin-bottom:5px;
-}
-
-.accent3 {
-	font-weight:bold;
-	font-size:48px;
-	letter-spacing: -1.2px;
-	text-transform:uppercase;
-	margin-bottom:30px;
-	color:#304766;
-}
 
 .accent4 {
-	font-weight:bold;
-	font-size:22px;
+	height: 22px;
+	font-family: Montserrat;
+	font-size: 22px;
+	font-weight: bold;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: normal;
+	letter-spacing: normal;
+	text-align: left;
+	color: #344765;
 	text-transform:uppercase;
-	color:#344765;
-}
-
-.normal {
-	font-weight:600;
-	font-size:16px;
-	text-transform:uppercase;
-	margin-bottom:5px;
-	letter-spacing: 1.2px;
 }
 
 .normal2{
-	font-weight:600;
-	font-size:16px;
+	font-family: Raleway;
+	font-size: 16px;
+	font-weight: 600;
+	font-style: normal;
+	font-stretch: normal;
 	line-height: 1.38;
-	color:#7f7f7f
+	letter-spacing: 0.4px;
+	text-align: left;
+	color: #7f7f7f;
 }
 
 .icon-container {
@@ -208,14 +209,14 @@ footer .material-icons{
 }
 
 .icon-container div{
-	margin-bottom:10px;
+	margin-bottom:12px;
 }
 .icon-container div:first-child {
 	min-width:100px;
 }
 .max{
 	width:100%;
-	max-width:450px;
+	max-width:410px;
 }
 
 .align-right{
@@ -231,30 +232,116 @@ footer .material-icons{
 }
 
 .download{
+	height: 30px;
+	text-transform: uppercase;
 	font-family: Montserrat;
 	font-size: 18px;
+	font-weight: 600;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: normal;
 	letter-spacing: 0.9px;
-	font-weight:600;
 	color: #575757;
+	margin-bottom:9px;
 }
 
 .download2{
+	height: 12px;
+	text-transform: uppercase;
 	font-family: Montserrat;
 	font-size: 14px;
 	font-weight: 600;
+	font-style: normal;
+	font-stretch: normal;
 	line-height: 1.57;
+	letter-spacing: normal;
 	color: #7d888a;
 }
+
+.timeline-date{
+	height: 28px;
+	font-family: Montserrat;
+	font-size: 28px;
+	font-weight: 600;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: normal;
+	letter-spacing: -0.7px;
+	text-transform: uppercase;
+	margin-bottom:16px;
+	color: #69bdca;
+}
+
+.timeline-text{
+	font-family: Montserrat;
+	font-size: 22px;
+	font-weight: 500;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.64;
+	letter-spacing: -0.6px;
+	text-align: right;
+	color: #ffffff;
+}
+
+.ellipse{
+	margin-top:-3px;
+	margin-right:10px;
+}
+
+.portrait-container{
+	width:33%;
+	float:left;
+	//margin-right:124px;
+}
+.portrait{
+	max-width: 239px;
+	height: 239px;
+	background-color: #ffffff;
+	background-color: var(--white);
+	border: solid 4px #344765;
+	margin:0 auto;
+}
+
+.team-name{
+	height: 22px;
+	margin-top:25px;
+	margin-bottom:9px;
+	font-family: Montserrat;
+	font-size: 22px;
+	font-weight: bold;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: normal;
+	letter-spacing: normal;
+	text-align: center;
+	color: #344765;
+}
+
+.team-title{
+	height: 14px;
+	font-family: Raleway;
+	font-size: 14px;
+	font-weight: bold;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: normal;
+	letter-spacing: normal;
+	text-align: center;
+	color: #344765;
+}
+
 /* parallax */
 
 .pin{
 	position: relative;
-	top: -75px;
+	top: -220px;
+	font-size:1px;
 }
 .parallax .content{
-	max-width:1070px;
+	max-width:1210px;
 	margin:0 auto;
-	padding:10px 10px;
+	padding:10px 20px;
 	opacity:0;
 }
 
@@ -262,7 +349,7 @@ footer .material-icons{
 #parallax1{
 	background-image: url(img/par1.png);
 	background-position-x:left;
-	min-height:1100px;
+	min-height:1200px;
 	color:#fff;
 	padding-top:60px;
 }
@@ -281,12 +368,12 @@ footer .material-icons{
 	background-position-y: bottom;
 	background-color:#fff;
 	color:#fff;
-	height:900px;
+	height:1170px;
 }
 
 #parallax4 {
 	background-color:#fff;
-	height: 400px;
+	height: 550px;
 }
 
 #parallax5 {
@@ -300,11 +387,12 @@ footer .material-icons{
 #parallax6 {
 	background-image: url(img/par6.png);
 	background-position-x:left;
-	margin-top:-350px;
-	height: 1430px;
+	margin-top:-366px;
+	height: 1650px;
 	position:relative;
 	z-index:1000;
 	padding-top:300px;
+	background-size:cover;
 }
 
 #parallax7 {
@@ -320,7 +408,7 @@ footer .material-icons{
 
 #parallax8 {
 	background-color:#fff;
-	height: 500px;
+	height: 1850px;
 }
 
 #parallax9 {
@@ -341,7 +429,7 @@ footer .material-icons{
 }
 
 #parallax11 {
-	height:600px;
+	height:2000px;
 	background-color:#fff;
 }
 
@@ -351,8 +439,8 @@ footer .material-icons{
 /* zeplin */
 
 .TEMCO-LOGO {
-	width: 70.5px;
-	height: 19px;
+	width: 141px;
+	height: 38px;
 	object-fit: contain;
 }
 
@@ -403,18 +491,27 @@ base {
 	.hide-mobile{
 		display:none;
 	}
-
+/*
 	.parallax .content{
 		max-width:1070px;
 		margin:0 auto;
 		padding:10px 20px;
 	}
-
+*/
 	.navbar-collapse {
 		background-color: #202020 !important;
 	}
 
 }
 
+@media only screen and (max-width: 882px) {
+	.nav-link{
+		font-size:11px;
+	}
+	.nav-item{
+		margin-left:5px;
+	}
+
+}
 
 /* end of mobile */

@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
-		<title>Tasha</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>TEMCO</title>
 
 		<!-- Bootstrap core CSS -->
 		<link href="css/bootstrap.css" rel="stylesheet">
 
 		<!-- google fonts -->
-		<link href="https://fonts.googleapis.com/css?family=Sarala:700" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,700,800" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
 
 		<!-- google icons -->
 		<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
@@ -20,141 +20,1123 @@
 	</head>
 	<body ng-app="TashaApp" ng-controller="TashaCtrl">
 
-		<!-- header -->
-		<nav class="navbar navbar-expand-md navbar-dark fixed-top">
-
-				<a class="navbar-brand" href="#">
-					<img src="img/temco-logo.png"
-							 srcset="img/temco-logo@2x.png 2x,img/temco-logo@3x.png 3x"
-							 class="TEMCO-LOGO">
-				</a>
-				<button class="navbar-toggler"
-								type="button"
-								data-toggle="collapse"
-								data-target="#navbarsExampleDefault"
-								aria-controls="navbarsExampleDefault"
-								aria-expanded="false"
-								aria-label="Toggle navigation">
-					<span class="navbar-toggler-icon"></span>
-				</button>
-				<div class="collapse navbar-collapse" id="navbarsExampleDefault">
-					<ul class="navbar-nav ml-auto">
-						<li class="nav-item" ng-repeat="item in navBars">
-							<a class="nav-link" href="{{item.href}}" ng-click="navClicked($event)">{{item.title}}</a>
-						</li>
-					</ul>
-				</div>
-
-		</nav>
-		<!-- end of header -->
-
 		<main role="main">
+
+			<!-- header -->
+			<nav class="navbar navbar-expand-md navbar-dark fixed-top">
+				<div id="navContainer">
+					<a class="navbar-brand"
+						 ng-click="navClicked($event,'home')">
+						<img src="img/TEMCO LOGO@3x.png"
+								 class="TEMCO-LOGO">
+					</a>
+					<button class="navbar-toggler"
+									type="button"
+									data-toggle="collapse"
+									data-target="#navbarsExampleDefault"
+									aria-controls="navbarsExampleDefault"
+									aria-expanded="false"
+									aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+					<div class="collapse navbar-collapse" id="navbarsExampleDefault">
+						<ul class="navbar-nav ml-auto">
+							<li class="nav-item" ng-repeat="item in navBars">
+								<a class="nav-link" ng-click="navClicked($event,item.title)">{{item.title}}</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+			<!-- end of header -->
 
 			<!-- container -->
 			<div class="container">
 
-				<div class="spacer s0"></div>
-				<div id="parallax1"
-						 class="parallaxParent">
-					<img src="img/base.png"
-							 srcset="img/base@2x.png 2x,img/base@3x.png 3x"
-							 class="base">
-					<img src="img/cube-2.png"
-							 srcset="img/cube-2@2x.png 2x,img/cube-2@3x.png 3x"
-							 class="CUBE-2"
-							 style="position:relative;top:-600px;">
-				</div>
-				<div class="spacer s1"></div>
-				<div class="spacer s0"></div>
-				<div id="parallax2" class="parallaxParent">
-					<h1>I am scene #2</h1>
-				</div>
-				<div class="spacer s1">
-				</div>
-				<div class="spacer s0"></div>
-				<div id="parallax3" class="parallaxParent">
-					<!-- Example row of columns -->
-					<div class="row section" id="test">
-						<div class="col-md-4">
-							<h2>Heading</h2>
-							<p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-							<p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+				<div id="parallax1" class="parallax">
+					<div class="content">
+						<a name="home" class="pin">&nbsp;</a>
+						<div id="headerTransform"
+								 style="margin-top:158px;margin-bottom:25px;">
+							<img src="img/BAR@2x.png" />
 						</div>
-						<div class="col-md-4">
-							<h2>Heading</h2>
-							<p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-							<p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+						<div style="margin-bottom:25px;
+												text-transform:uppercase;
+												font-family: Montserrat;
+												font-size: 50px;
+												font-weight: bold;
+												font-style: normal;
+												font-stretch: normal;
+												line-height: 0.76;
+												letter-spacing: -1.3px;
+												text-align: left;
+												color: #ffffff;
+												color: var(--white);">
+							Supply Chain Management
 						</div>
-						<div class="col-md-4">
-							<h2>Heading</h2>
-							<p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-							<p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+						<div style="height: 43px;
+												margin-bottom:20px;
+												text-transform:uppercase;
+												font-family: Montserrat;
+												font-size: 60px;
+												font-weight: bold;
+												font-style: normal;
+												font-stretch: normal;
+												line-height: 0.63;
+												letter-spacing: normal;
+												text-align: left;
+												color: #ffffff;
+												color: var(--white);">
+							Reimagined<img style="margin-top: 23px;
+    																margin-left: 5px;" src="img/copy9@2x.png" />
+						</div>
+						<div style="height: 42px;
+												text-transform:uppercase;
+												font-family: Raleway;
+												font-size: 16px;
+												font-weight: 600;
+												font-style: normal;
+												font-stretch: normal;
+												line-height: 1.88;
+												letter-spacing: 1.2px;
+												text-align: left;
+												color: #ffffff;
+												color: var(--white);">
+							TEMCO delivers trusted data from the point of origin<br />
+							to the point of consumption
+						</div>
+						<img src="img/HEADER_CUBE01@2x.png"
+								 class="hide-mobile"
+								 style="position: absolute;
+								 				right: 0px;
+								 				top: 240px;" />
+					</div>
+				</div>
+
+				<div id="parallax2" class="parallax">
+					<div class="content">
+
+						<div class="row">
+							<div class="col-md-12">
+								<div style="margin-bottom:76px;
+														margin-top:80px;
+														height:42px;
+														font-family: Montserrat;
+														font-size: 48px;
+														font-weight: bold;
+														font-style: normal;
+														font-stretch: normal;
+														line-height: 1;
+														letter-spacing: -1.2px;
+														text-align: left;
+														text-transform:uppercase;
+														color: #304766;">
+									Temco Advantage
+									<img style="margin-top: 15px;
+    													margin-left: 5px;" src="img/copy9@2x.png" />
+									<a name="about" class="pin">&nbsp;</a>
+								</div>
+							</div>
+							<div class="col-md-6">
+								<div class="row icon-container">
+									<div>
+										<img src="img/icon_connected@2x.png" />
+									</div>
+									<div>
+										<div class="accent4">
+											Connected
+										</div>
+										<div class="normal2">
+											Track, share, and access real time data anywhere<br />
+											anytime through highly linked blockchain technology
+										</div>
+									</div>
+								</div>
+
+								<div class="row icon-container">
+									<div>
+										<img src="img/icon_credible@2x.png" />
+									</div>
+									<div>
+										<div class="accent4">
+											Credible
+										</div>
+										<div class="normal2">
+											Vendors are background checked through<br />
+											our Vendor Verification System (VVS).
+										</div>
+									</div>
+								</div>
+
+								<div class="row icon-container">
+									<div>
+										<img src="img/icon_transparent@2x.png" />
+									</div>
+									<div>
+										<div class="accent4">
+											Transparent
+										</div>
+										<div class="normal2">
+											Data collected through smart contract in<br />
+											blockchain is safe and transparent.
+										</div>
+									</div>
+								</div>
+
+								<div class="row icon-container">
+									<div>
+										<img src="img/icon_traceable@2x.png" />
+									</div>
+									<div>
+										<div class="accent4">
+											Tracecable
+										</div>
+										<div class="normal2">
+											Trace your purchase back to its origin.<br />
+											Any dispute can be reliably and promptly resolved.
+										</div>
+									</div>
+								</div>
+
+								<div class="row icon-container">
+									<div>
+										<img src="img/icon_secure@2x.png" />
+									</div>
+									<div>
+										<div class="accent4">
+											Secure
+										</div>
+										<div class="normal2" style="margin-bottom:120px;">
+											Blockchain data is distributed and therefore,<br />
+											unmodifiable.
+										</div>
+									</div>
+								</div>
+
+							</div>
+							<div class="col-md-6 align-right">
+								<img class="max hide-mobile" src="img/ig_advantage1@2x.png" />
+							</div>
 						</div>
 					</div>
 				</div>
-				<div class="spacer s2"></div>
+
+				<div id="parallax3" class="parallax"
+						 style="padding-top:40px;">
+
+					<div class="content" style="margin-top:180px;">
+						<a name="about" class="pin">&nbsp;</a>
+						<div class="row">
+							<div class="col-md-6">
+								<div class="row icon-container">
+									<div>
+										<img src="img/icon_verifiedvendor@2x.png" />
+									</div>
+									<div>
+										<div class="accent4 bright">
+											Verified Vendors
+										</div>
+										<div class="normal2 light-blue">
+											TEMCO only partners with businesses cleared<br />
+											by the Vendor Verification System (VVS)
+										</div>
+									</div>
+								</div>
+
+								<div class="row icon-container">
+									<div>
+										<img src="img/icon_linkeddata@2x.png" />
+									</div>
+									<div>
+										<div class="accent4 bright">
+											Linked Data
+										</div>
+										<div class="normal2 light-blue">
+											Smart tags track the entire supply chain process<br />
+											from point of origin to the final consumer, helping<br />
+											companies boost efficiency and cut costs.
+										</div>
+									</div>
+								</div>
+
+								<div class="row icon-container">
+									<div>
+										<img src="img/icon_realreviews@2x.png" />
+									</div>
+									<div>
+										<div class="accent4 bright">
+											Real Reviews
+										</div>
+										<div class="normal2 light-blue">
+											Consumers who purchased the product can post<br />
+											reviews. Using blockchain technology for verification,<br />
+											TEMCO eliminates the risk of fake reviews.
+										</div>
+									</div>
+								</div>
+
+								<div class="row icon-container">
+									<div>
+										<img src="img/icon_marketplace@2x.png" />
+									</div>
+									<div>
+										<div class="accent4 bright">
+											Marketplace
+										</div>
+										<div class="normal2 light-blue">
+											TEMCO marketplace offers all the features above.<br />
+											You don't have to look other places to get more<br />
+											information.
+										</div>
+									</div>
+								</div>
+
+							</div>
+							<div class="col-md-6 align-right">
+								<div class="align-right bright hide-mobile"
+										 style="height: 105px;
+														margin-bottom:110px;
+														text-transform:uppercase;
+														font-family: Montserrat;
+														font-size: 48px;
+														font-weight: bold;
+														font-style: normal;
+														font-stretch: normal;
+														line-height: normal;
+														letter-spacing: -1.2px;
+														margin-top:-65px;
+														text-align: right;
+														color: #effbfd;">
+									Revolutionary<br />
+									<img style="margin-top: 14px;
+    													margin-right: 10px;" src="img/copy9@2x.png" />
+									Solution
+								</div>
+								<img class="max hide-mobile" src="img/IG_SOLUTION@2x.png">
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div style="margin: 0 auto;
+										margin-top: -180px;
+										position:relative;
+										width: 100px;">
+					<img style="width: 100px;
+											margin-left: -7px;"
+							 src="img/logo_drop.png" />
+				</div>
+
+				<div id="parallax4" class="parallax">
+
+					<div class="content"
+							 style="text-align:center;
+							 			  max-width:750px;">
+						<div style="height: 48px;
+												margin-top:32px;
+												margin-bottom:79px;
+												text-transform: uppercase;
+												font-family: Montserrat;
+												font-size: 48px;
+												font-weight: bold;
+												font-style: normal;
+												font-stretch: normal;
+												line-height: normal;
+												letter-spacing: -1.2px;
+												text-align: center;
+												color: #344765;">
+							Our Mission
+						</div>
+						<div style="height: 388px;
+												font-family: Raleway;
+												font-size: 20px;
+												font-weight: 600;
+												font-style: normal;
+												font-stretch: normal;
+												line-height: 1.4;
+												letter-spacing: -0.6px;
+												text-align: center;
+												color: #808080;">
+							Most companies do not have sufficient infrastructure to provide supply chain management data to their customers.  Consumers want more information about their purchases, but they only have access to basic shipping logs and estimated data.
+							<br />
+							<br />
+							The Transportation Enterprise Merchandise Customer Organization (TEMCO)
+							Project will revolutionize supply chain management through innovative technology-smart contracts and blockchain.
+							<br />
+							<br />
+							Our project will provide greater transparency and highly-linked data across
+							the entire supply chain process to deliver trustworthy information that
+							empowers businesses and consumers.
+						</div>
+					</div>
+				</div>
+
+				<div id="parallax5" class="parallax">
+					<div class="content">
+						<div class="row">
+							<div class="col-md-6">
+								<div style="height: 46px;
+														margin-bottom:59px;
+														text-transform: uppercase;
+														font-family: Montserrat;
+														font-size: 48px;
+														font-weight: bold;
+														font-style: normal;
+														font-stretch: normal;
+														line-height: normal;
+														letter-spacing: -1.2px;
+														text-align: left;
+														color: #ffffff;
+														color: var(--white);">
+									Whitepaper
+									<a name="whitepaper" class="pin">&nbsp;</a>
+								</div>
+								<div style="height: 100px;
+														font-family: Raleway;
+														font-size: 16px;
+														font-weight: 600;
+														font-style: normal;
+														font-stretch: normal;
+														line-height: 1.88;
+														letter-spacing: 0.4px;
+														text-align: left;
+														color: #ffffff;
+														color: var(--white);">
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod<br />
+									tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+								</div>
+								<div style="background:url('img/BUTTON BASE@2x.png');
+														background-repeat:no-repeat;
+														text-align:center;
+														margin-top:25px;
+    												width: 255px;
+    												height: 71px;">
+									<div class="download" style="padding-top:18px;">
+										DOWNLOAD
+									</div>
+									<div class="download2" style="">
+										PDF, 2MB
+									</div>
+								</div>
+							</div>
+							<div class="col-md-6 align-right">
+								<img class="hide-mobile" style="max-width:800px;margin-left:-80px;" src="img/WHITEPAPER@2x.png">
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div id="parallax6" class="parallax">
+					<div style="margin: 0 auto;
+											margin-top: -57px;
+											width: 100px;">
+						<img style="width: 100px;"
+								 src="img/cube_drop.png" />
+					</div>
+					<div class="content">
+						<div style="height: 47px;
+												margin-top:100px;
+												margin-bottom:39px;
+												font-family: Montserrat;
+												font-size: 48px;
+												font-weight: bold;
+												font-style: normal;
+												font-stretch: normal;
+												line-height: normal;
+												letter-spacing: -1.2px;
+												text-align: center;
+												color: #384b69;">
+							TECHNOLOGY
+							<a name="technology" class="pin">&nbsp;</a>
+						</div>
+						<div style="height: 70px;
+												margin-bottom:81px;
+												font-family: Raleway;
+												font-size: 16px;
+												font-weight: 600;
+												font-style: normal;
+												font-stretch: normal;
+												line-height: 1.5;
+												letter-spacing: 0.4px;
+												text-align: center;
+												color: #384b69;">
+							TEMCO pairs proven system with innovative technology by adopting a hybrid model that combines<br />
+							blockchain technology and Interplanetary File System (IPFS).  Smart contracts are based on<br />
+							Ethereum and Eos. The design will achieve efficient storage and efficient data processing.
+						</div>
+						<div>
+							<img style ="width:100%;" src="img/IG_TECHNOLOGY@2x.png" />
+						</div>
+					</div>
+				</div>
+
+				<div id="parallax7" class="parallax">
+					<div class="content">
+						<div class="row">
+							<div class="col-md-3 hide-mobile">
+								<img style="margin-left:-60px;" src="img/iPhone@2x.png" />
+							</div>
+							<div class="col-md-9">
+								<div style="height: 48px;
+												text-transform:uppercase;
+												margin-bottom:55px;
+												margin-top:365px;
+												font-family: Montserrat;
+												font-size: 48px;
+												font-weight: bold;
+												font-style: normal;
+												font-stretch: normal;
+												line-height: normal;
+												letter-spacing: -1.2px;
+												text-align: right;
+												color: #ffffff;">
+									Prototype
+									<a name="prototype" style="top:-482px;" class="pin">&nbsp;</a>
+								</div>
+								<div style="height: 55px;
+												margin-bottom:38px;
+												font-family: Raleway;
+												font-size: 16px;
+												font-weight: 600;
+												font-style: normal;
+												font-stretch: normal;
+												line-height: 1.88;
+												letter-spacing: 0.4px;
+												text-align: right;
+												color: #ffffff;">
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor<br />
+									incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+								</div>
+								<div style="float:right;">
+									<div style="background:url('img/BUTTON BASE@2x.png');
+														background-repeat:no-repeat;
+														text-align:center;
+    												width: 255px;
+    												height: 71px;">
+										<div style="height: 17px;
+														padding-top:20px;
+														font-family: Montserrat;
+														font-size: 23px;
+														font-weight: bold;
+														font-style: normal;
+														font-stretch: normal;
+														line-height: normal;
+														letter-spacing: 1.2px;
+														text-align: center;
+														color: #575757;">
+											PLAY
+											<img style="margin-left:27px;
+															margin-top:-5px;"
+													 src="img/PLAY%20ICON@2x.png" />
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+
+				<div style="margin: 0 auto;
+										width: 100px;">
+					<img style="width: 100px;
+											margin-left: 4px;"
+							 src="img/drop_coin.png" />
+				</div>
+
+				<div id="parallax8" class="parallax">
+					<div class="content">
+						<a name="token" class="pin">&nbsp;</a>
+						<div style="height: 48px;
+												text-transform: uppercase;
+												font-family: Montserrat;
+												font-size: 48px;
+												font-weight: bold;
+												font-style: normal;
+												font-stretch: normal;
+												line-height: normal;
+												letter-spacing: -1.2px;
+												text-align: center;
+												margin-bottom:147px;
+												color: #344765;">
+							Token Model
+						</div>
+						<div style="width: 453px;
+												height: 108px;
+												margin:0 auto;
+												position:relative;
+												z-index:1000;
+												background-image: linear-gradient(14deg, #3456c2, #85c0cb), linear-gradient(#344765, #344765);">
+							<div style="height: 34px;
+													padding-top:35px;
+													font-family: Montserrat;
+													font-size: 34px;
+													font-weight: 600;
+													font-style: normal;
+													font-stretch: normal;
+													line-height: normal;
+													letter-spacing: -0.9px;
+													text-align: center;
+													color: #ffffff;">
+								TOKEN APPRECIATION
+							</div>
+						</div>
+						<div style="width: 1103px;
+													height: 1425px;
+													position:relative;
+													z-index:999;
+													margin-top:-52px;
+													background-color: #ffffff;
+													border: solid 5px #344765;">
+							<div style="height: 68px;
+													font-family: Raleway;
+													font-size: 16px;
+													font-weight: 600;
+													font-style: normal;
+													font-stretch: normal;
+													line-height: 1.5;
+													letter-spacing: 0.4px;
+													width:900px;
+													margin:0 auto;
+													margin-top:101px;
+													color: #2e4262;">
+								TEMCO tokens and incentive points are awarded as a token of appreciation for your participation in the community.<br />
+								To maintain a sustainable system, monthly top reviewers, highly ranked businesses, and community-voted feedback<br />
+								writers are rewarded. You can spend the tokens in the TEMCO marketplace for your next purchase.
+							</div>
+							<div style="text-align:center;margin-top:97px;">
+								<img src="img/IG_APPRECIATION@2x.png" />
+							</div>
+						</div>
+					</div>
+				</div>
+
+
+				<div id="parallax9" class="parallax">
+					<div style="margin: 0 auto;
+										width: 100px;
+										margin-top:24px;">
+						<img style="width: 100px;
+											margin-left: 2px;"
+								 src="img/drop_distro.png" />
+					</div>
+					<div class="content">
+						<div style="height: 48px;
+												margin-top:35px;
+												text-transform:uppercase;
+												font-family: Montserrat;
+												font-size: 48px;
+												font-weight: bold;
+												font-style: normal;
+												font-stretch: normal;
+												line-height: normal;
+												letter-spacing: -1.2px;
+												text-align: center;
+												margin-bottom:199px;
+												color: #344765;">
+							Token  Distribution
+						</div>
+						<div style="text-align:center;">
+							<img style="margin-left:-100px;width:100%;" src="img/IG_DISTRIBUTION@2x.png" />
+						</div>
+					</div>
+				</div>
+
+				<div id="parallax10" class="parallax">
+					<div style="margin: 0 auto;
+											width: 100px;
+											margin-top:10px;">
+						<img style="width: 100px;"
+								 src="img/drop_roadmap.png" />
+					</div>
+					<div style="height: 48px;
+											margin-top:55px;
+											margin-bottom:212px;
+											font-family: Montserrat;
+											font-size: 48px;
+											font-weight: bold;
+											font-style: normal;
+											font-stretch: normal;
+											line-height: normal;
+											letter-spacing: -1.2px;
+											text-align: center;
+											color: #ffffff;">
+						ROADMAP
+					</div>
+					<div style="height: 34px;
+											font-family: Montserrat;
+											margin-bottom:25px;
+											font-size: 34px;
+											font-weight: 600;
+											font-style: normal;
+											font-stretch: normal;
+											line-height: normal;
+											letter-spacing: -0.9px;
+											text-align: center;
+											color: #69bdca;">
+						PHASE 1
+					</div>
+					<div style="height: 40px;
+											text-transform: uppercase;
+											margin-bottom:30px;
+											font-family: Montserrat;
+											font-size: 40px;
+											font-weight: 600;
+											font-style: normal;
+											font-stretch: normal;
+											line-height: normal;
+											letter-spacing: -1px;
+											text-align: center;
+											color: #ffffff;">
+						Development of TEMCO Platform
+					</div>
+					<div style="text-align:center;margin-bottom:88px;">
+						<img src="img/BAR@2x.png" />
+					</div>
+
+					<div style="text-align:center;">
+						<img style="width:150px;" src="img/timeline.png" />
+					</div>
+
+					<div style="width: 443px;
+											margin: 0 auto;
+											margin-top: -708px;
+											position: relative;
+    									left: -308px;">
+						<div class="timeline-date"
+								 style="text-align:right;">
+							april 2018
+						</div>
+						<div class="timeline-text"
+								 style="text-align:right;
+												margin-bottom:85px;">
+							Crowd Sale
+						</div>
+						<div class="timeline-date"
+								 style="text-align:right;">
+							4q 2018
+						</div>
+
+						<div class="timeline-text"
+								 style="text-align:right;margin-bottom:68px;">
+							Back-end Development of TEMCO<br />
+							Beta Application<br />
+							Development of Customer functionality<br />
+							including like vote and reply system
+						</div>
+
+						<div class="timeline-date"
+								 style="text-align:right;">
+							2q 2019
+						</div>
+						<div class="timeline-text"
+								 style="text-align:right;margin-bottom:68px;">
+							Development of Beta Data Network<br />
+							Development of Alpha Vendor Verification<br/>System<br />
+							Development of Alpha TEMCO Market
+						</div>
+
+						<div class="timeline-date"
+								 style="text-align:right;">
+							4q 2019
+						</div>
+						<div class="timeline-text"
+								 style="text-align:right;">
+							TEMCO Platform Alpha Launch
+						</div>
+					</div>
+
+					<div style="width: 452px;
+											margin: 0 auto;
+											margin-top: -838px;
+											position: relative;
+											left: 313px;">
+						<div class="timeline-date"
+								 style="text-align:left;">
+							march 2018
+						</div>
+						<div class="timeline-text"
+								 style="text-align:left;
+												margin-bottom:47px;">
+							TEMCO Whitepaper Release<br />
+							TEMCO Prototype Release
+						</div>
+						<div class="timeline-date"
+								 style="text-align:left;">
+							sept 2018
+						</div>
+
+						<div class="timeline-text"
+								 style="text-align:left;margin-bottom:50px;">
+							Development of Blockchain Beta Core Engine
+						</div>
+
+						<div class="timeline-date"
+								 style="text-align:left;">
+							1q 2019
+						</div>
+						<div class="timeline-text"
+								 style="text-align:left;margin-bottom:156px;">
+							Development of rating system on products<br />
+							UI/UX Design of TEMCO Beta Application<br />
+							Development of TEMCO Beta Wallet<br />
+							Development of Beta API for Enterprise
+						</div>
+
+						<div class="timeline-date"
+								 style="text-align:left;">
+							3q 2019
+						</div>
+						<div class="timeline-text"
+								 style="text-align:left;">
+							UI/UX Design of TEMCO Alpha Applications<br />
+							Integration Test and Stabilization
+						</div>
+					</div>
+
+					<div style="height: 34px;
+											margin-top:500px;
+											margin-bottom:25px;
+											font-family: Montserrat;
+											font-size: 34px;
+											font-weight: 600;
+											font-style: normal;
+											font-stretch: normal;
+											line-height: normal;
+											letter-spacing: -0.9px;
+											text-align: center;
+											color: #69bdca;">
+						PHASE 2
+					</div>
+					<div style="height: 89px;
+											font-family: Montserrat;
+											text-transform: uppercase;
+											font-size: 40px;
+											font-weight: 600;
+											font-style: normal;
+											font-stretch: normal;
+											line-height: normal;
+											margin-bottom:39px;
+											letter-spacing: -1px;
+											text-align: center;
+											color: #ffffff;">
+						Development of Smart Temperature and<br />
+						Moisture Sensor with Digital Output
+					</div>
+					<div style="text-align:center;margin-bottom:88px;">
+						<img src="img/BAR@2x.png" />
+					</div>
+
+					<div style="text-align:center;">
+						<img style="width:150px;" src="img/timeline2.png" />
+					</div>
+
+					<div style="width: 325px;
+											margin: 0 auto;
+											margin-top: -176px;
+											position: relative;
+											left: -255px;">
+						<div class="timeline-date"
+								 style="text-align:right;">
+							april 2018
+						</div>
+						<div class="timeline-text"
+								 style="text-align:right;
+												margin-bottom:85px;">
+							<span style="font-weight:bold;">Final Product verification</span><br />
+							<img class="ellipse" src="img/Ellipse%20620%20copy%207@2x.png" />
+							Use case and Environmental<br />
+							verification with final Product
+						</div>
+					</div>
+
+					<div style="width: 433px;
+											margin: 0 auto;
+											margin-top: -730px;
+											position: relative;
+											left: 308px;">
+						<div class="timeline-date"
+								 style="text-align:left;">
+							march 2018
+						</div>
+						<div class="timeline-text"
+								 style="text-align:left;
+												margin-bottom:85px;">
+							<span style="font-weight:bold;">Hardware</span><br />
+							<img class="ellipse" src="img/Ellipse%20620%20copy%207@2x.png" />
+							Smart Sensor Selection and Analysis<br />
+							<img class="ellipse" src="img/Ellipse%20620%20copy%207@2x.png" />
+							Sensor interface design with<br />
+							<img class="ellipse" style="visibility:hidden;" src="img/Ellipse%20620%20copy%207@2x.png" />
+							Product development<br />
+							<img class="ellipse" src="img/Ellipse%20620%20copy%207@2x.png" />
+							Sensor bring up and testing<br />
+							<img class="ellipse" style="visibility:hidden;" src="img/Ellipse%20620%20copy%207@2x.png" />
+							with end product<br />
+							<br />
+							<span style="font-weight:bold;">Sofrwrae</span><br />
+							<img class="ellipse" src="img/Ellipse%20620%20copy%207@2x.png" />
+							Sensor driver development<br />
+							<img class="ellipse" style="visibility:hidden;" src="img/Ellipse%20620%20copy%207@2x.png" />
+							for sensor configuration<br />
+							<img class="ellipse" src="img/Ellipse%20620%20copy%207@2x.png" />
+							Protocol development<br />
+							<img class="ellipse" style="visibility:hidden;" src="img/Ellipse%20620%20copy%207@2x.png" />
+							for sensor Interface<br />
+							<img class="ellipse" src="img/Ellipse%20620%20copy%207@2x.png" />
+							Sensor integration with Drivers<br />
+							<img class="ellipse" src="img/Ellipse%20620%20copy%207@2x.png" />
+							Use case validation and testing
+						</div>
+						<div class="timeline-date"
+								 style="text-align:left;">
+							sept 2018
+						</div>
+						<div class="timeline-text"
+								 style="text-align:left;">
+							Integration of sensors in TEMCO Platform<br />Alpha
+						</div>
+					</div>
+				</div>
+				<div style="margin: 0 auto;
+										width: 100px;
+										margin-top: -209px;;">
+					<img style="width: 100px;margin-left:10px;"
+							 src="img/drop_team.png" />
+				</div>
+
+				<div id="parallax11" class="parallax">
+
+					<div class="content">
+						<div style="height: 48px;
+												margin-top:82px;
+												margin-bottom:89px;
+												font-family: Montserrat;
+												font-size: 48px;
+												font-weight: bold;
+												font-style: normal;
+												font-stretch: normal;
+												line-height: normal;
+												letter-spacing: -1.2px;
+												text-align: center;
+												color: #344765;">
+							TEAM
+							<a name="team" style="top:-195px;" class="pin">&nbsp;</a>
+						</div>
+						<div style="margin:0 auto;max-width:965px;">
+							<div class="portrait-container">
+								<div class="portrait">
+
+								</div>
+								<div class="team-name">
+									JOHN DOE
+								</div>
+								<div class="team-title">
+									POSITION
+								</div>
+							</div>
+
+							<div class="portrait-container">
+								<div class="portrait">
+
+								</div>
+								<div class="team-name">
+									JOHN DOE
+								</div>
+								<div class="team-title">
+									POSITION
+								</div>
+							</div>
+
+							<div class="portrait-container" style="margin-right:0px;">
+								<div class="portrait">
+
+								</div>
+								<div class="team-name">
+									JOHN DOE
+								</div>
+								<div class="team-title">
+									POSITION
+								</div>
+							</div>
+						</div>
+						<div style="height: 48px;
+												margin-bottom:89px;
+												font-family: Montserrat;
+												font-size: 48px;
+												font-weight: bold;
+												font-style: normal;
+												font-stretch: normal;
+												line-height: normal;
+												letter-spacing: -1.2px;
+												text-align: center;
+												margin-top: 152px;
+												float: left;
+												width: 100%;
+												color: #344765;">
+							ADVISORY
+						</div>
+						<div style="margin:0 auto;max-width:965px;">
+							<div class="portrait-container">
+								<div class="portrait" >
+
+								</div>
+								<div class="team-name">
+									JOHN DOE
+								</div>
+								<div class="team-title"
+										 style="margin-bottom:78px;">
+									POSITION
+								</div>
+							</div>
+
+							<div class="portrait-container">
+								<div class="portrait">
+
+								</div>
+								<div class="team-name">
+									JOHN DOE
+								</div>
+								<div class="team-title"
+										 style="margin-bottom:78px;">
+									POSITION
+								</div>
+							</div>
+
+							<div class="portrait-container" style="margin-right:0px;">
+								<div class="portrait">
+
+								</div>
+								<div class="team-name">
+									JOHN DOE
+								</div>
+								<div class="team-title"
+										 style="margin-bottom:78px;">
+									POSITION
+								</div>
+							</div>
+						</div>
+						<div style="margin:0 auto;max-width:965px;">
+							<div class="portrait-container">
+								<div class="portrait">
+
+								</div>
+								<div class="team-name">
+									JOHN DOE
+								</div>
+								<div class="team-title">
+									POSITION
+								</div>
+							</div>
+
+							<div class="portrait-container">
+								<div class="portrait">
+
+								</div>
+								<div class="team-name">
+									JOHN DOE
+								</div>
+								<div class="team-title">
+									POSITION
+								</div>
+							</div>
+
+							<div class="portrait-container" style="margin-right:0px;">
+								<div class="portrait">
+
+								</div>
+								<div class="team-name">
+									JOHN DOE
+								</div>
+								<div class="team-title">
+									POSITION
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
 			</div>
 			<!-- /container -->
 
-		</main>
+			<!-- footer -->
+			<footer>
+				<div class="row">
+					<div class="col-md-4 col-left">
+						<div>
+							<img src="img/TEMCO LOGO@2x.png"
+									 class="TEMCO-LOGO">
+						</div>
+						<div style="margin-top:10px;">
+							Supply Chain Management Reimagined
+						</div>
+						<div style="margin-top:20px;">
+							<i class="material-icons">location_on</i> Seoul, Korea
+						</div>
+						<div>
+							<i class="material-icons">phone</i> 82-0000-0000-0000
+						</div>
+						<div>
+							<i class="material-icons">mail_outline</i> info@temco.com
+						</div>
+						<div class="social-media">
+							<a target="_blank" href="http://google.com">
+								<img src="img/FACEBOOK@2x.png" />
+							</a>
+							<a target="_blank" href="http://google.com">
+								<img src="img/TWITTER@2x.png" />
+							</a>
+							<a target="_blank" href="http://google.com">
+								<img src="img/LINKEDIN@2x.png" />
+							</a>
+							<a target="_blank" href="http://google.com">
+								<img src="img/GOOGLE@2x.png" />
+							</a>
+							<a target="_blank" href="http://google.com">
+								<img src="img/RSS@2x.png" />
+							</a>
+						</div>
+					</div>
+					<div class="col-md-4 col-center">
+						<div ng-repeat="item in navBars">
+							<a ng-click="navClicked($event,item.title)">{{item.title}}</a>
+						</div>
+					</div>
+					<div class="col-md-4 col-right">
+						<div>
+							Contact Us
+						</div>
+						<div class="contactUs">
+							FORM
+						</div>
+					</div>
+				</div>
+			</footer>
 
-		<!-- footer -->
-		<footer class="container">
-			<div class="row">
-				<div class="col-md-4 col-left">
-					<div>
-						<img src="img/temco-logo.png"
-								 srcset="img/temco-logo@2x.png 2x,
-             img/temco-logo@3x.png 3x"
-								 class="TEMCO-LOGO">
-					</div>
-					<div style="margin-top:10px;">
-						Supply Chain Management Reimagined
-					</div>
-					<div style="margin-top:20px;">
-						<i class="material-icons">location_on</i> Seoul, Korea
-					</div>
-					<div>
-						<i class="material-icons">phone</i> 82-0000-0000-0000
-					</div>
-					<div>
-						<i class="material-icons">mail_outline</i> info@temco.com
-					</div>
-				</div>
-				<div class="col-md-4 col-center">
-					<div ng-repeat="item in navBars">
-						{{item.title}}
-					</div>
-				</div>
-				<div class="col-md-4">
-					<div>
-						Contact Us
-					</div>
-				</div>
+			<div class="copyright">
+				&copy; 2018 Copyright Temco
 			</div>
-		</footer>
+			<!-- end of footer -->
 
-		<div class="copyright">
-			&copy; 2018 Copyright Temco
-		</div>
-		<!-- end of footer -->
+		</main>
 
 		<!-- Bootstrap core JavaScript
 		================================================== -->
 		<!-- Placed at the end of the document so the pages load faster -->
-		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-						integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-						crossorigin="anonymous">
+		<script
+			src="https://code.jquery.com/jquery-3.3.1.min.js"
+			integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+			crossorigin="anonymous"></script>
 		</script>
 		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
 		<script src="js/bootstrap.bundle.js"></script>
 
 		<!-- parallax -->
-		<script src="http://scrollmagic.io/js/lib/velocity.min.js"></script>
-		<script src="http://scrollmagic.io/js/lib/greensock/TweenMax.min.js"></script>
+		<script src="js/velocity.min.js"></script>
+		<script src="js/TweenMax.min.js"></script>
 		<script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js"></script>
-		<script src="http://scrollmagic.io/scrollmagic/uncompressed/plugins/animation.gsap.js"></script>
-		<script src="http://scrollmagic.io/scrollmagic/uncompressed/plugins/animation.velocity.js"></script>
+		<script src="js/animation.gsap.js"></script>
+		<script src="js/animation.velocity.js"></script>
 		<script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.min.js"></script>
 
 		<!-- Custom JavaScript for this template -->
