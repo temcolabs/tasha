@@ -373,22 +373,24 @@ footer .material-icons{
 
 #parallax4 {
 	background-color:#fff;
-	height: 550px;
+	height: 520px;
 }
 
 #parallax5 {
 	background-image: url(img/par5.png);
-	background-color:#fff;
 	background-position-x:center;
-	padding-top:250px;
-	height: 1000px;
+	padding-top:800px;
+	height: 1679px;
+	margin-top: -350px;
+	position:relative;
+	z-index:1001
 }
 
 #parallax6 {
-	background-image: url(img/par6.png);
+	//background-image: url(img/par6.png);
 	background-position-x:left;
 	margin-top:-366px;
-	height: 1650px;
+	height: 1750px;
 	position:relative;
 	z-index:1000;
 	padding-top:300px;
@@ -399,7 +401,7 @@ footer .material-icons{
 	background-image: url(img/par7.png);
 	background-color:#fff;
 	background-position-x:center;
-	height: 1180px;
+	height: 1198px;
 	position:relative;
 	z-index:999;
 	margin-top:-325px;
@@ -415,15 +417,15 @@ footer .material-icons{
 	background:url('img/par9.png');
 	background-color:#fff;
 	background-position-x:center;
-	height:2547px;
-	padding-top:150px;
+	height:2500px;
+	padding-top:186px;
 }
 
 #parallax10 {
 	background:url('img/par10.png');
 	background-position-x:center;
 	margin-top: -375px;
-	height:4190px;
+	height:4075px;
 	background-color:#fff;
 	padding-top:200px;
 }
