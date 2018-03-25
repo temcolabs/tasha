@@ -1,6 +1,6 @@
 
 var app = angular.module('TashaApp', []);
-app.controller('TashaCtrl', function ($scope) {
+app.controller('TashaCtrl', function ($scope, $timeout) {
 
   //navbar
   $scope.navBars = [
@@ -27,13 +27,24 @@ app.controller('TashaCtrl', function ($scope) {
     }
   ];
 
-  $scope.navClicked = function($event,linkId){
-    $("html, body").animate({scrollTop: $('a[name=' + linkId + ']').offset().top }, 500);
+  var activeNav;
+
+
+  $scope.navClicked = function($event,linkId,noScroll){
+    if(!noScroll){
+      isLoaded = false;
+      $("html, body").animate({scrollTop: $('a[name=' + linkId + ']').offset().top }, 500, function(){
+        isLoaded = true;
+      });
+    }
     $('.nav-item').removeClass('active');
-    if(linkId === 'home'){
+
+    if(linkId === 'home') {
       return;
     }
-    $($event.currentTarget).parent().addClass('active');
+
+    var target = $event ? $($event.currentTarget) : $('.nav-link[data=' + linkId + ']');
+    target.parent().addClass('active');
   };
 
   //language switcher
@@ -92,6 +103,11 @@ app.controller('TashaCtrl', function ($scope) {
     //.addIndicators()
     .addTo(controller);
 
+  /*
+  scene5.on("leave", function (event) {
+    console.log("Scene left.");
+  });
+  */
   var scene6 = new ScrollMagic.Scene({
     triggerElement: "#parallax6",
     offset:300
@@ -134,4 +150,95 @@ app.controller('TashaCtrl', function ($scope) {
     //.addIndicators()
     .addTo(controller);
 
+  scene2.on("enter", function (event) {
+    activeNav = 'about';
+    if(isLoaded){
+      $scope.navClicked(undefined,activeNav,true);
+    }
+  });
+
+  scene2.on("leave", function (event) {
+    activeNav = 'home';
+    if(isLoaded){
+      $scope.navClicked(undefined,'home',true);
+    }
+  });
+
+  scene5.on("enter", function (event) {
+    activeNav = 'whitepaper';
+    if(isLoaded){
+      $scope.navClicked(undefined,activeNav,true);
+    }
+  });
+
+  scene5.on("leave", function (event) {
+    activeNav = 'about';
+    if(isLoaded){
+      $scope.navClicked(undefined,'about',true);
+    }
+  });
+
+  scene6.on("enter", function (event) {
+    activeNav = 'technology';
+    if(isLoaded){
+      $scope.navClicked(undefined,activeNav,true);
+    }
+  });
+
+  scene6.on("leave", function (event) {
+    activeNav = 'whitepaper';
+    if(isLoaded){
+      $scope.navClicked(undefined,'whitepaper',true);
+    }
+  });
+
+  scene7.on("enter", function (event) {
+    activeNav = 'prototype';
+    if(isLoaded){
+      $scope.navClicked(undefined,activeNav,true);
+    }
+  });
+
+  scene7.on("leave", function (event) {
+    activeNav = 'technology';
+    if(isLoaded){
+      $scope.navClicked(undefined,'technology',true);
+    }
+  });
+
+  scene8.on("enter", function (event) {
+    activeNav = 'token';
+    if(isLoaded){
+      $scope.navClicked(undefined,activeNav,true);
+    }
+  });
+
+  scene8.on("leave", function (event) {
+    activeNav = 'prototype';
+    if(isLoaded){
+      $scope.navClicked(undefined,'prototype',true);
+    }
+  });
+
+  scene11.on("enter", function (event) {
+    activeNav = 'team';
+    if(isLoaded){
+      $scope.navClicked(undefined,activeNav,true);
+    }
+  });
+
+  scene11.on("leave", function (event) {
+    activeNav = 'prototype';
+    if(isLoaded){
+      $scope.navClicked(undefined,'token',true);
+    }
+  });
+
+  var isLoaded = false;
+  $timeout(function(){
+    isLoaded = true;
+    if(activeNav){
+      $scope.navClicked(undefined,activeNav,true);
+    }
+  });
 });
