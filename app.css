@@ -2,7 +2,7 @@ main, .navbar, .parallax, #ploygon4, #base3{
 	max-width:1920px;
 }
 
-body{
+body,html{
 	font-family: 'Raleway', sans-serif;
 	background-color:#fff;
 	overflow-x:hidden;
@@ -500,7 +500,7 @@ base {
 	}
 }
 
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 415px) {
 	.header1{
 		font-size:40px !important;
 		line-height:1 !important;
