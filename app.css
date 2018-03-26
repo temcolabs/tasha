@@ -6,7 +6,7 @@ body{
 	font-family: 'Raleway', sans-serif;
 	background-color:#fff;
 	overflow-x:hidden;
-	min-width:640px;
+	//min-width:640px;
 }
 
 .navbar, footer{
@@ -273,8 +273,8 @@ footer .material-icons{
 }
 
 .portrait-container{
-	width:33%;
-	float:left;
+	//width:33%;
+	//float:left;
 	//margin-right:124px;
 }
 .portrait{
@@ -411,11 +411,12 @@ footer .material-icons{
 	height:4075px;
 	background-color:#fff;
 	padding-top:200px;
+	//display:none;
 }
 
 #parallax11 {
-	height:2000px;
 	background-color:#fff;
+	margin-bottom:250px;
 }
 
 /* end of parallax */
@@ -472,17 +473,6 @@ base {
 
 /* mobile */
 
-@media only screen and (max-width: 768px) {
-	.hide-mobile{
-		display:none;
-	}
-
-	.navbar-collapse {
-		background-color: #202020 !important;
-	}
-
-}
-
 @media only screen and (max-width: 882px) {
 	.nav-link{
 		font-size:11px;
@@ -491,7 +481,6 @@ base {
 	.nav-item{
 		margin-left:5px;
 	}
-
 }
 
 @media only screen and (max-width: 818px) {
@@ -501,4 +490,32 @@ base {
 }
 
 
+@media only screen and (max-width: 768px) {
+	.hide-mobile{
+		display:none;
+	}
+
+	.navbar-collapse {
+		background-color: #202020 !important;
+	}
+}
+
+@media only screen and (max-width: 375px) {
+	.header1{
+		font-size:40px !important;
+		line-height:1 !important;
+	}
+	.header2{
+		font-size:45px !important;
+	}
+	#parallax4{
+		height:700px !important;
+	}
+	.dot{
+		display:none;
+	}
+	.hide-375{
+		display:none;
+	}
+}
 /* end of mobile */
