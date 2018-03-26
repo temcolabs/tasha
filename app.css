@@ -2,7 +2,7 @@ main, .navbar, .parallax, #ploygon4, #base3{
 	max-width:1920px;
 }
 
-body{
+body,html{
 	font-family: 'Raleway', sans-serif;
 	background-color:#fff;
 	overflow-x:hidden;
