@@ -241,6 +241,29 @@ footer .material-icons{
 	color: #7d888a;
 }
 
+.timeline-parent-container{
+	background-position-x:center;
+	background-repeat:no-repeat;
+	background-size:contain;
+	width:100%;
+}
+
+.timeline-left-container{
+	width:50%;
+	float:left;
+	text-align:right;
+	padding-right:95px;
+	height:100%;
+}
+
+.timeline-right-container{
+	width:50%;
+	float:right;
+	padding-left:95px;
+	text-align: left;
+	height:100%;
+}
+
 .timeline-date{
 	height: 28px;
 	font-family: Montserrat;
@@ -263,7 +286,6 @@ footer .material-icons{
 	font-stretch: normal;
 	line-height: 1.64;
 	letter-spacing: -0.6px;
-	text-align: right;
 	color: #ffffff;
 }
 
@@ -474,6 +496,7 @@ base {
 /* mobile */
 
 @media only screen and (max-width: 882px) {
+
 	.nav-link{
 		font-size:11px;
 	}
@@ -484,13 +507,96 @@ base {
 }
 
 @media only screen and (max-width: 818px) {
+
 	#header1{
 		line-height: 1 !important;
 	}
 }
 
+/* speicific to timeline mobile */
+@media only screen and (max-width: 800px) {
+
+	#phase1Roadmap{
+		background-image: url(img/roadmap_line_combined.png) !important;
+		height:1322px !important;
+		margin-top:-50px;
+	}
+
+	#phase2Roadmap{
+		background-image: url(img/roadmap_line_combined2.png) !important;
+		height:829px !important;
+		margin-top:-50px;
+	}
+
+	/* need these header adjustments to fit in mobile height */
+	#phase2Header{
+		margin-top: 150px !important;
+	}
+	#roadmapHeader{
+		margin-bottom:100px !important;
+	}
+
+	.timeline-left-container{
+		padding-right:65px;
+	}
+
+	.timeline-right-container{
+		padding-left:65px;
+	}
+
+	.timeline-left-container .timeline-text{
+		position:relative;
+		top:-5px;
+		right:-40px;
+	}
+
+	.timeline-right-container .timeline-text{
+		position:relative;
+		top:-5px;
+		left:-35px;
+	}
+
+	/* phase 1 left */
+	#apr2018{
+		margin-top:109px !important;
+		height: 214px !important;
+	}
+
+	#_4q2018{
+		height:550px !important;
+	}
+
+	#_2q2019{
+		height:417px !important;
+	}
+
+	/* phase 1 right */
+	#mar2018{
+		height:218px !important;
+	}
+
+	#sept2018{
+		height:296px !important;
+	}
+
+	#_1q2019{
+		height:579px !important;
+	}
+
+	/* phase 2 left */
+	#apr2018_2{
+		margin-top:622px !important;
+	}
+
+	/* phase 2 right */
+	#mar2018_2{
+		height:801px !important;
+	}
+}
+
 
 @media only screen and (max-width: 768px) {
+
 	.hide-mobile{
 		display:none;
 	}
@@ -498,24 +604,43 @@ base {
 	.navbar-collapse {
 		background-color: #202020 !important;
 	}
+
+}
+
+@media only screen and (max-width: 665px) {
+	.timeline-date{
+		padding-top:5px;
+		font-size:18px;
+	}
+
+	.timeline-text{
+		font-size:16px;
+	}
+
 }
 
 @media only screen and (max-width: 415px) {
+
 	.header1{
 		font-size:40px !important;
 		line-height:1 !important;
 	}
+
 	.header2{
 		font-size:45px !important;
 	}
+
 	#parallax4{
 		height:700px !important;
 	}
+
 	.dot{
 		display:none;
 	}
+
 	.hide-375{
 		display:none;
 	}
 }
+
 /* end of mobile */
