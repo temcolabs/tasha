@@ -1,36 +1,10 @@
 
-var app = angular.module('TashaApp', []);
+var app = angular.module('TashaApp', ['nav','bio','footer']);
 app.controller('TashaCtrl', function ($scope, $timeout) {
-
-  //navbar
-  $scope.navBars = [
-    {
-      title:'about'
-    },
-    {
-      title:'whitepaper'
-    },
-    {
-      title:'technology'
-    },
-    {
-      title:'prototype'
-    },
-    {
-      title:'token'
-    },
-    {
-      title:'team'
-    },
-    {
-      title:'notice'
-    }
-  ];
-
+  //nav
   var activeNav;
-
-
   $scope.navClicked = function($event,linkId,noScroll){
+    console.info('nav clicked');
     if(!noScroll){
       isLoaded = false;
       $("html, body").animate({scrollTop: $('a[name=' + linkId + ']').offset().top }, 500, function(){
@@ -47,11 +21,20 @@ app.controller('TashaCtrl', function ($scope, $timeout) {
     target.parent().addClass('active');
   };
 
-  //language switcher
-  $scope.lang = 'Eng';
-  $scope.changeLang = function(lang){
-    $scope.lang = lang;
-  }
+  //advisors
+  $scope.advisors = [
+    'advisor1',
+    'advisor2',
+    'advisor3'
+  ];
+  $scope.teamMembers = [
+    'brian_lee',
+    'jaeseob_yoon',
+    'hongsub_lim',
+    'saemi_hong',
+    'natasha_woo',
+    'sunha_hwang'
+  ];
 
   //parallax
 

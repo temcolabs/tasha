@@ -6,101 +6,10 @@ body,html{
 	font-family: 'Raleway', sans-serif;
 	background-color:#fff;
 	overflow-x:hidden;
-	//min-width:640px;
-}
-
-.navbar, footer{
-	font-family: Montserrat;
-	font-weight: bold;
-	font-style: normal;
-	font-stretch: normal;
-	line-height: 2.71;
-	letter-spacing: normal;
-	text-align: left;
 }
 
 .transparent{
 	background-color:transparent !important;
-}
-
-.navbar, .dropdown-menu, footer, .copyright{
-	text-transform:uppercase;
-	font-size:14px;
-}
-
-.navbar{
-	background-color:transparent;
-	width:100%;
-	padding:0;
-	//height:75px;
-}
-
-.navbar-toggler {
-	margin-right:20px;
-}
-
-.nav-link{
-	padding-top:0px;
-	padding-bottom:0px;
-}
-.nav-link, footer a, .navbar-brand{
-	cursor:pointer;
-}
-
-.navbar-brand{
-	padding-left:20px;
-}
-
-.nav-item:last-child{
-	padding-right:20px;
-}
-
-.nav-item:last-child a{
-	margin-right:0px;
-	padding-right:0px !important;
-}
-
-.navbar-color, .navbar-color .navbar-collapse {
-	background-color: #202020;
-}
-
-#navContainer {
-	width:100%;
-	position: relative;
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-	-ms-flex-wrap: wrap;
-	flex-wrap: wrap;
-	-webkit-box-align: center;
-	-ms-flex-align: center;
-	align-items: center;
-	-webkit-box-pack: justify;
-	-ms-flex-pack: justify;
-	justify-content: space-between;
-	//padding: 0 20px;
-	margin: 0 auto;
-	height:75px;
-	vertical-align: middle;
-}
-
-.fixed-top{
-	right:inherit;
-	left:inherit;
-}
-
-.nav-link{
-	color:#fff !important;
-	//margin-right: 0.5rem;
-	padding-left: 25px;
-}
-
-.navbar .active a{
-	border-bottom:1.5px #72c2cc solid;
-}
-
-.nav-item{
-	margin-left:10px;
 }
 
 main{
@@ -112,48 +21,6 @@ main .container{
 	max-width:100% !important;
 	padding:0px;
 	background-color:#fff;
-}
-
-footer, .copyright{
-	color:#fff;
-}
-
-footer{
-	padding: 124px 20px 111px 20px;
-	background-color:#202020;
-	text-align: center;
-}
-
-footer a, footer a:hover{
-	color:white;
-}
-
-footer .material-icons{
-	font-size:14px;
-	position:relative;
-	top:3px;
-	margin-right:10px;
-}
-
-.social-media img {
-	width: 41px;
-	height: 40px;
-	margin-right:14px;
-}
-
-.copyright{
-	font-family: Montserrat;
-	font-size: 16px;
-	font-weight: 600;
-	font-style: normal;
-	font-stretch: normal;
-	line-height: normal;
-	letter-spacing: 0.6px;
-	text-align: center;
-	padding-top:21px;
-	padding-bottom:21px;
-	color: #7b7b7b;
-	background-color:#000;
 }
 
 
@@ -295,45 +162,9 @@ footer .material-icons{
 }
 
 .portrait-container{
-	//width:33%;
-	//float:left;
-	//margin-right:124px;
-}
-.portrait{
-	max-width: 239px;
-	height: 239px;
-	background-color: #ffffff;
-	background-color: var(--white);
-	border: solid 4px #344765;
-	margin:0 auto;
-}
-
-.team-name{
-	height: 22px;
-	margin-top:25px;
-	margin-bottom:9px;
-	font-family: Montserrat;
-	font-size: 22px;
-	font-weight: bold;
-	font-style: normal;
-	font-stretch: normal;
-	line-height: normal;
-	letter-spacing: normal;
-	text-align: center;
-	color: #344765;
-}
-
-.team-title{
-	height: 14px;
-	font-family: Raleway;
-	font-size: 14px;
-	font-weight: bold;
-	font-style: normal;
-	font-stretch: normal;
-	line-height: normal;
-	letter-spacing: normal;
-	text-align: center;
-	color: #344765;
+	width:33%;
+	display:inline-block;
+	vertical-align: top;
 }
 
 /* parallax */
@@ -439,10 +270,28 @@ footer .material-icons{
 #parallax11 {
 	background-color:#fff;
 	margin-bottom:250px;
+	float:left;
+	width:100%;
 }
 
 /* end of parallax */
 
+.copyright{
+	font-family: Montserrat;
+	font-size: 16px;
+	font-weight: 600;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: normal;
+	letter-spacing: 0.6px;
+	text-align: center;
+	padding-top:21px;
+	padding-bottom:21px;
+	color: #7b7b7b;
+	background-color:#000;
+	float:left;
+	width:100%;
+}
 
 /* zeplin */
 
@@ -613,6 +462,9 @@ base {
 		background-color: #202020 !important;
 	}
 
+	.portrait-container{
+		width:50%;
+	}
 }
 
 @media only screen and (max-width: 665px) {

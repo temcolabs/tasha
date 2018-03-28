@@ -1,0 +1,23 @@
+<div id="navContainer">
+	<a class="navbar-brand"
+		 ng-click="$parent.navClicked($event,'home')">
+		<img src="img/TEMCO LOGO@3x.png"
+				 class="TEMCO-LOGO">
+	</a>
+	<button class="navbar-toggler"
+					type="button"
+					data-toggle="collapse"
+					data-target="#navbarsExampleDefault"
+					aria-controls="navbarsExampleDefault"
+					aria-expanded="false"
+					aria-label="Toggle navigation">
+		<span class="navbar-toggler-icon"></span>
+	</button>
+	<div class="collapse navbar-collapse" id="navbarsExampleDefault">
+		<ul class="navbar-nav ml-auto">
+			<li class="nav-item" ng-repeat="item in navBars">
+				<a class="nav-link" data={{item.title}} ng-click="$parent.$parent.navClicked($event,item.title)">{{item.title}}</a>
+			</li>
+		</ul>
+	</div>
+</div>

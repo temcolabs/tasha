@@ -16,38 +16,18 @@
 					rel="stylesheet">
 
 		<!-- Custom styles for this template -->
+		<link href="nav/nav.css" rel="stylesheet">
+		<link href="bio/bio.css" rel="stylesheet">
+		<link href="footer/footer.css" rel="stylesheet">
 		<link href="app.css" rel="stylesheet">
+
 	</head>
 	<body ng-app="TashaApp" ng-controller="TashaCtrl">
 
 		<main role="main">
 
 			<!-- header -->
-			<nav class="navbar navbar-expand-md navbar-dark fixed-top">
-				<div id="navContainer">
-					<a class="navbar-brand"
-						 ng-click="navClicked($event,'home')">
-						<img src="img/TEMCO LOGO@3x.png"
-								 class="TEMCO-LOGO">
-					</a>
-					<button class="navbar-toggler"
-									type="button"
-									data-toggle="collapse"
-									data-target="#navbarsExampleDefault"
-									aria-controls="navbarsExampleDefault"
-									aria-expanded="false"
-									aria-label="Toggle navigation">
-						<span class="navbar-toggler-icon"></span>
-					</button>
-					<div class="collapse navbar-collapse" id="navbarsExampleDefault">
-						<ul class="navbar-nav ml-auto">
-							<li class="nav-item" ng-repeat="item in navBars">
-								<a class="nav-link" data={{item.title}} ng-click="navClicked($event,item.title)">{{item.title}}</a>
-							</li>
-						</ul>
-					</div>
-				</div>
-			</nav>
+			<nav class="navbar navbar-expand-md navbar-dark fixed-top"></nav>
 			<!-- end of header -->
 
 			<!-- container -->
@@ -904,41 +884,10 @@
 							<img style="margin-top: 15px;" class="dot" src="img/copy9@2x.png" />
 							<a name="team" style="top:-195px;" class="pin">&nbsp;</a>
 						</div>
-						<div style="margin:0 auto;max-width:965px;" class="row">
-							<div class="portrait-container col-md-4">
-								<div class="portrait">
-
-								</div>
-								<div class="team-name">
-									JOHN DOE
-								</div>
-								<div class="team-title" style="margin-bottom:78px;">
-									POSITION
-								</div>
-							</div>
-
-							<div class="portrait-container col-md-4">
-								<div class="portrait">
-
-								</div>
-								<div class="team-name">
-									JOHN DOE
-								</div>
-								<div class="team-title" style="margin-bottom:78px;">
-									POSITION
-								</div>
-							</div>
-
-							<div class="portrait-container col-md-4" style="margin-right:0px;">
-								<div class="portrait">
-
-								</div>
-								<div class="team-name">
-									JOHN DOE
-								</div>
-								<div class="team-title" style="margin-bottom:78px;">
-									POSITION
-								</div>
+						<div>
+							<div class="portrait-container"
+									 ng-repeat="teamMember in teamMembers">
+								<bio data="{{teamMember}}"/>
 							</div>
 						</div>
 						<div style="height: 48px;
@@ -957,84 +906,12 @@
 							ADVISORY
 							<img style="margin-top: 15px;" class="dot" src="img/copy9@2x.png" />
 						</div>
-						<div style="margin:0 auto;max-width:965px;" class="row">
-							<div class="portrait-container col-md-4">
-								<div class="portrait" >
-
-								</div>
-								<div class="team-name">
-									JOHN DOE
-								</div>
-								<div class="team-title"
-										 style="margin-bottom:78px;">
-									POSITION
-								</div>
-							</div>
-
-							<div class="portrait-container col-md-4">
-								<div class="portrait">
-
-								</div>
-								<div class="team-name">
-									JOHN DOE
-								</div>
-								<div class="team-title"
-										 style="margin-bottom:78px;">
-									POSITION
-								</div>
-							</div>
-
-							<div class="portrait-container col-md-4" style="margin-right:0px;">
-								<div class="portrait">
-
-								</div>
-								<div class="team-name">
-									JOHN DOE
-								</div>
-								<div class="team-title"
-										 style="margin-bottom:78px;">
-									POSITION
-								</div>
+						<div>
+							<div class="portrait-container"
+									 ng-repeat="advisor in advisors">
+								<bio data="{{advisor}}"/>
 							</div>
 						</div>
-						<div style="margin:0 auto;max-width:965px;" class="row">
-							<div class="portrait-container col-md-4">
-								<div class="portrait">
-
-								</div>
-								<div class="team-name">
-									JOHN DOE
-								</div>
-								<div class="team-title">
-									POSITION
-								</div>
-							</div>
-
-							<div class="portrait-container col-md-4">
-								<div class="portrait">
-
-								</div>
-								<div class="team-name">
-									JOHN DOE
-								</div>
-								<div class="team-title">
-									POSITION
-								</div>
-							</div>
-
-							<div class="portrait-container col-md-4" style="margin-right:0px;">
-								<div class="portrait">
-
-								</div>
-								<div class="team-name">
-									JOHN DOE
-								</div>
-								<div class="team-title">
-									POSITION
-								</div>
-							</div>
-						</div>
-					</div>
 				</div>
 
 			</div>
@@ -1042,67 +919,6 @@
 
 			<!-- footer -->
 			<footer>
-				<div>
-					<img src="img/TEMCO LOGO@3x.png"
-							 style="width: 219px;
-											height: 38px;
-											margin-bottom:55px;
-											object-fit: contain;">
-				</div>
-				<div style="ont-family: Montserrat;
-										text-transform:uppercase;
-										font-size: 22px;
-										font-weight: 600;
-										font-style: normal;
-										font-stretch: normal;
-										line-height: 1;
-										letter-spacing: 0.9px;
-										text-align: center;
-										color: #ffffff;">
-					Supply Chain Management Reimagined
-				</div>
-				<div style="width: 330px;
-										height: 2px;
-										margin:0 auto;
-										margin-top:58px;
-										margin-bottom:29px;
-										background-color: #ffffff;"></div>
-				<div style="height: 16px;
-										font-family: Montserrat;
-										text-transform: uppercase;
-										font-size: 18px;
-										font-weight: 600;
-										font-style: normal;
-										font-stretch: normal;
-										line-height: 1;
-										letter-spacing: 0.7px;
-										margin-bottom:39px;
-										text-align: center;
-										color: #ffffff;">
-					<img style="width: 21px;
-											height: 15px;
-											margin-top: -3px;
-											margin-right: 21px;"
-							 src="img/email.png" />
-					info@temco.com
-				</div>
-				<div class="social-media">
-					<a target="_blank" href="http://google.com">
-						<img src="img/facebook@3x.png" />
-					</a>
-					<a target="_blank" href="http://google.com">
-						<img src="img/twitter@3x.png" />
-					</a>
-					<a target="_blank" href="http://google.com">
-						<img src="img/linkedin@3x.png" />
-					</a>
-					<a target="_blank" href="http://google.com">
-						<img src="img/google@3x.png" />
-					</a>
-					<a target="_blank" href="http://google.com">
-						<img src="img/rss@3x.png" style="margin-right:0px;" />
-					</a>
-				</div>
 
 			</footer>
 
@@ -1133,6 +949,9 @@
 		<script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.min.js"></script>
 
 		<!-- Custom JavaScript for this template -->
+		<script src="nav/nav.js"></script>
+		<script src="bio/bio.js"></script>
+		<script src="footer/footer.js"></script>
 		<script src="app.js"></script>
 	</body>
 </html>

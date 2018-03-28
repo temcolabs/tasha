@@ -1,0 +1,43 @@
+.portrait{
+	max-width: 239px;
+	background-color: #ffffff;
+	margin:0 auto;
+}
+
+.mug{
+	border: solid 4px #344765;
+	height: 239px;
+}
+
+.team-name{
+	height: 22px;
+	margin-top:25px;
+	margin-bottom:9px;
+	font-family: Montserrat;
+	font-size: 22px;
+	font-weight: bold;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: normal;
+	letter-spacing: normal;
+	text-align: center;
+	color: #344765;
+}
+
+.team-title{
+	height: 14px;
+	font-family: Raleway;
+	font-size: 14px;
+	font-weight: bold;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: normal;
+	letter-spacing: normal;
+	text-align: center;
+	color: #344765;
+	margin-bottom:20px;
+}
+
+.bio{
+	margin-left:-20px;
+}

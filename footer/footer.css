@@ -1,0 +1,41 @@
+footer, footer .copyright{
+	color:#fff;
+	text-transform:uppercase;
+	font-size:14px;
+}
+
+footer{
+	font-family: Montserrat;
+	font-weight: bold;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 2.71;
+	letter-spacing: normal;
+	padding: 124px 20px 111px 20px;
+	background-color:#202020;
+	text-align: center !important;
+	float:left;
+	width:100%;
+}
+
+footer a, footer a:hover{
+	color:white;
+	cursor:pointer;
+}
+
+footer .material-icons{
+	font-size:14px;
+	position:relative;
+	top:3px;
+	margin-right:10px;
+}
+
+footer a:hover{
+	text-decoration:none;
+}
+
+footer .social-media img {
+	width: 41px;
+	height: 40px;
+	margin-right:14px;
+}
