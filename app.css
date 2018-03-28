@@ -663,6 +663,18 @@ base {
 	.hide-375{
 		display:none;
 	}
+
+	.timeline-text{
+		font-size:14px;
+	}
+
+	/* need these header adjustments to fit in mobile height */
+	#phase2Header{
+		margin-top: 100px !important;
+	}
+	#roadmapHeader{
+		margin-bottom:100px !important;
+	}
 }
 
 /* end of mobile */
