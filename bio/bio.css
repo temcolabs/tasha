@@ -4,13 +4,27 @@
 	margin:0 auto;
 }
 
+.portrait .linkedin{
+	text-align:center;
+	margin-bottom:22px;
+}
+
+.portrait .linkedin img{
+	width: 29px;
+	height: 29px;
+}
 .mug{
 	border: solid 4px #344765;
-	height: 239px;
+}
+
+.mug-inner{
+	width:100%;
+	background-image: url(data/default.png);
+	background-size:contain;
+	padding-bottom:100%;
 }
 
 .team-name{
-	height: 22px;
 	margin-top:25px;
 	margin-bottom:9px;
 	font-family: Montserrat;
@@ -25,7 +39,6 @@
 }
 
 .team-title{
-	height: 14px;
 	font-family: Raleway;
 	font-size: 14px;
 	font-weight: bold;
@@ -35,9 +48,22 @@
 	letter-spacing: normal;
 	text-align: center;
 	color: #344765;
-	margin-bottom:20px;
+	margin-bottom:16px;
 }
 
 .bio{
-	margin-left:-20px;
+	font-family: Raleway;
+	font-size: 12px;
+	font-weight: 600;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: normal;
+	letter-spacing: -0.3px;
+	text-align: left;
+	color: #344765;
+}
+
+.bio img{
+	width: 5px;
+	height: 5px;
 }

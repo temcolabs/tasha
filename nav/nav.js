@@ -7,7 +7,7 @@ angular.module('nav', [])
       link: function($scope) {
 
         //navbar
-        $scope.navBars = [
+        $scope.$parent.navBars = [
           {
             title:'about'
           },
@@ -30,6 +30,7 @@ angular.module('nav', [])
             title:'notice'
           }
         ];
+
       }
     };
   });

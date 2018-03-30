@@ -1,14 +1,26 @@
-
 var app = angular.module('TashaApp', ['nav','bio','footer']);
+
 app.controller('TashaCtrl', function ($scope, $timeout) {
+
   //nav
-  var activeNav;
+
+  function updateTop(mode){
+    if(mode === 'dark'){
+      $('#go_to_top img').attr('src','img/go_to_top_white@2x.png');
+      $('#go_to_top_text').css('color','#fff');
+    }
+    else{
+      $('#go_to_top img').attr('src','img/go_to_top@2x.png');
+      $('#go_to_top_text').css('color','#202020');
+    }
+  }
+
   $scope.navClicked = function($event,linkId,noScroll){
-    console.info('nav clicked');
     if(!noScroll){
       isLoaded = false;
       $("html, body").animate({scrollTop: $('a[name=' + linkId + ']').offset().top }, 500, function(){
         isLoaded = true;
+        updateTop($scope.activeScene);
       });
     }
     $('.nav-item').removeClass('active');
@@ -16,12 +28,27 @@ app.controller('TashaCtrl', function ($scope, $timeout) {
     if(linkId === 'home') {
       return;
     }
-
     var target = $event ? $($event.currentTarget) : $('.nav-link[data=' + linkId + ']');
     target.parent().addClass('active');
   };
 
-  //advisors
+  $scope.$watch('activeScene', function(newValue) {
+    console.warn(newValue);
+    console.info(isLoaded);
+    if (newValue && isLoaded) {
+      updateTop(newValue);
+      updateTop(newValue);
+    }
+  });
+
+  $scope.$watch('activeNav', function(newValue){
+    if(newValue && isLoaded){
+      $scope.navClicked(undefined,newValue,true);
+    }
+  });
+
+  //team members & advisors
+
   $scope.advisors = [
     'advisor1',
     'advisor2',
@@ -43,6 +70,7 @@ app.controller('TashaCtrl', function ($scope, $timeout) {
 
   // build scenes
 
+  //position to activate navbar-color and go_to_top
   var headerTransform = new ScrollMagic.Scene({
     triggerElement: "#headerTransform",
     offset:450
@@ -50,12 +78,21 @@ app.controller('TashaCtrl', function ($scope, $timeout) {
     //.addIndicators()
     .addTo(controller);
 
+  var topTransform = new ScrollMagic.Scene({
+    triggerElement: "#parallax2",
+    triggerHook:1,
+    offset:350
+  }).setClassToggle("#go_to_top", "show")
+    //.addIndicators()
+    .addTo(controller);
+
+
   var scene1 = new ScrollMagic.Scene({
     triggerElement: "#parallax1",
     offset:60
   }).setVelocity("#parallax1 .content", {opacity: 1.0,}, {duration: 400})
     //.setTween("#parallax1 > div", {y: "80%", ease: Linear.easeNone})
-    ////.addIndicators()
+    //.addIndicators()
     .addTo(controller);
 
   var scene2 = new ScrollMagic.Scene({
@@ -72,11 +109,25 @@ app.controller('TashaCtrl', function ($scope, $timeout) {
     //.addIndicators()
     .addTo(controller);
 
+  var sceneTop3 = new ScrollMagic.Scene({
+    triggerElement: "#parallax3",
+    triggerHook:1,
+    offset:75
+  })//.addIndicators()
+    .addTo(controller);
+
   var scene4 = new ScrollMagic.Scene({
     triggerElement: "#parallax4",
     offset:0
   }).setVelocity("#parallax4 .content", {opacity: 1.0}, {duration: 400})
     //.addIndicators()
+    .addTo(controller);
+
+  var sceneTop4 = new ScrollMagic.Scene({
+    triggerElement: "#parallax4",
+    triggerHook:1,
+    offset:-325
+  })//.addIndicators()
     .addTo(controller);
 
   var scene5 = new ScrollMagic.Scene({
@@ -86,16 +137,25 @@ app.controller('TashaCtrl', function ($scope, $timeout) {
     //.addIndicators()
     .addTo(controller);
 
-  /*
-  scene5.on("leave", function (event) {
-    console.log("Scene left.");
-  });
-  */
+  var sceneTop5 = new ScrollMagic.Scene({
+    triggerElement: "#parallax5",
+    triggerHook:1,
+    offset:750
+  })//.addIndicators()
+    .addTo(controller);
+
   var scene6 = new ScrollMagic.Scene({
     triggerElement: "#parallax6",
     offset:300
   }).setVelocity("#parallax6 .content", {opacity: 1.0}, {duration: 400})
     //.addIndicators()
+    .addTo(controller);
+
+  var sceneTop6 = new ScrollMagic.Scene({
+    triggerElement: "#parallax6",
+    triggerHook:1,
+    offset:200
+  })//.addIndicators()
     .addTo(controller);
 
   var scene7 = new ScrollMagic.Scene({
@@ -105,11 +165,25 @@ app.controller('TashaCtrl', function ($scope, $timeout) {
     //.addIndicators()
     .addTo(controller);
 
+  var sceneTop7 = new ScrollMagic.Scene({
+    triggerElement: "#parallax7",
+    triggerHook:1,
+    offset:200
+  })//.addIndicators()
+    .addTo(controller);
+
   var scene8 = new ScrollMagic.Scene({
     triggerElement: "#parallax8",
     offset:0
   }).setVelocity("#parallax8 .content", {opacity: 1.0}, {duration: 400})
     //.addIndicators()
+    .addTo(controller);
+
+  var sceneTop8 = new ScrollMagic.Scene({
+    triggerElement: "#parallax8",
+    triggerHook:1,
+    offset:-200
+  })//.addIndicators()
     .addTo(controller);
 
   var scene9 = new ScrollMagic.Scene({
@@ -126,6 +200,14 @@ app.controller('TashaCtrl', function ($scope, $timeout) {
     //.addIndicators()
     .addTo(controller);
 
+  var sceneTop10 = new ScrollMagic.Scene({
+    triggerElement: "#parallax10",
+    triggerHook:1,
+    offset:200
+  })//.addIndicators()
+    .addTo(controller);
+
+
   var scene11 = new ScrollMagic.Scene({
     triggerElement: "#parallax11",
     offset:0
@@ -133,95 +215,168 @@ app.controller('TashaCtrl', function ($scope, $timeout) {
     //.addIndicators()
     .addTo(controller);
 
+  var sceneTop11 = new ScrollMagic.Scene({
+    triggerElement: "#parallax11",
+    triggerHook:1,
+    offset:-200
+  })//.addIndicators()
+    .addTo(controller);
+
+  //scene events
+
+  sceneTop3.on("enter", function (event) {
+    $scope.activeScene = 'dark';
+    $scope.$apply();
+  });
+
+  sceneTop3.on("leave", function (event) {
+    $scope.activeScene = 'default';
+    $scope.$apply();
+  });
+
+  sceneTop4.on("enter", function (event) {
+    $scope.activeScene = 'default';
+    $scope.$apply();
+  });
+
+  sceneTop4.on("leave", function (event) {
+    $scope.activeScene = 'dark';
+    $scope.$apply();
+  });
+
+  sceneTop5.on("enter", function (event) {
+    $scope.activeScene = 'dark';
+    $scope.$apply();
+  });
+
+  sceneTop5.on("leave", function (event) {
+    $scope.activeScene = 'default';
+    $scope.$apply();
+  });
+
+  sceneTop6.on("enter", function (event) {
+    $scope.activeScene = 'default';
+    $scope.$apply();
+  });
+
+  sceneTop6.on("leave", function (event) {
+    $scope.activeScene = 'dark';
+    $scope.$apply();
+  });
+
+  sceneTop7.on("enter", function (event) {
+    $scope.activeScene = 'dark';
+    $scope.$apply();
+  });
+
+  sceneTop7.on("leave", function (event) {
+    $scope.activeScene = 'default';
+    $scope.$apply();
+  });
+
+  sceneTop8.on("enter", function (event) {
+    $scope.activeScene = 'default';
+    $scope.$apply();
+  });
+
+  sceneTop8.on("leave", function (event) {
+    $scope.activeScene = 'dark';
+    $scope.$apply();
+  });
+
+  sceneTop10.on("enter", function (event) {
+    $scope.activeScene = 'dark';
+    $scope.$apply();
+  });
+
+  sceneTop10.on("leave", function (event) {
+    $scope.activeScene = 'default';
+    $scope.$apply();
+  });
+
+  sceneTop11.on("enter", function (event) {
+    $scope.activeScene = 'default';
+    $scope.$apply();
+  });
+
+  sceneTop11.on("leave", function (event) {
+    $scope.activeScene = 'dark';
+    $scope.$apply();
+  });
+
   scene2.on("enter", function (event) {
-    activeNav = 'about';
-    if(isLoaded){
-      $scope.navClicked(undefined,activeNav,true);
-    }
+    $scope.activeNav = 'about';
+    $scope.$apply();
   });
 
   scene2.on("leave", function (event) {
-    activeNav = 'home';
-    if(isLoaded){
-      $scope.navClicked(undefined,'home',true);
-    }
+    $scope.activeNav = 'home';
+    $scope.$apply();
   });
 
   scene5.on("enter", function (event) {
-    activeNav = 'whitepaper';
-    if(isLoaded){
-      $scope.navClicked(undefined,activeNav,true);
-    }
+    $scope.activeNav = 'whitepaper';
+    $scope.$apply();
   });
 
   scene5.on("leave", function (event) {
-    activeNav = 'about';
-    if(isLoaded){
-      $scope.navClicked(undefined,'about',true);
-    }
+    $scope.activeNav = 'about';
+    $scope.$apply();
   });
 
   scene6.on("enter", function (event) {
-    activeNav = 'technology';
-    if(isLoaded){
-      $scope.navClicked(undefined,activeNav,true);
-    }
+    $scope.activeNav = 'technology';
+    $scope.$apply();
   });
 
   scene6.on("leave", function (event) {
-    activeNav = 'whitepaper';
-    if(isLoaded){
-      $scope.navClicked(undefined,'whitepaper',true);
-    }
+    $scope.activeNav = 'whitepaper';
+    $scope.$apply();
   });
 
   scene7.on("enter", function (event) {
-    activeNav = 'prototype';
-    if(isLoaded){
-      $scope.navClicked(undefined,activeNav,true);
-    }
+    $scope.activeNav = 'prototype';
+    $scope.$apply();
   });
 
   scene7.on("leave", function (event) {
-    activeNav = 'technology';
-    if(isLoaded){
-      $scope.navClicked(undefined,'technology',true);
-    }
+    $scope.activeNav = 'technology';
+    $scope.$apply();
   });
 
   scene8.on("enter", function (event) {
-    activeNav = 'token';
-    if(isLoaded){
-      $scope.navClicked(undefined,activeNav,true);
-    }
+    $scope.activeNav = 'token';
+    $scope.$apply();
   });
 
   scene8.on("leave", function (event) {
-    activeNav = 'prototype';
-    if(isLoaded){
-      $scope.navClicked(undefined,'prototype',true);
-    }
+    $scope.activeNav = 'prototype';
+    $scope.$apply();
   });
 
   scene11.on("enter", function (event) {
-    activeNav = 'team';
-    if(isLoaded){
-      $scope.navClicked(undefined,activeNav,true);
-    }
+    $scope.activeNav = 'team';
+    $scope.$apply();
   });
 
   scene11.on("leave", function (event) {
-    activeNav = 'prototype';
-    if(isLoaded){
-      $scope.navClicked(undefined,'token',true);
-    }
+    $scope.activeNav = 'prototype';
+    $scope.$apply();
   });
 
   var isLoaded = false;
   $timeout(function(){
     isLoaded = true;
-    if(activeNav){
-      $scope.navClicked(undefined,activeNav,true);
+    if($scope.activeNav){
+      var activeNav = $scope.activeNav;
+      var activeScene = $scope.activeScene;
+      $scope.activeNav = undefined;
+      $scope.activeScene = undefined;
+      $scope.$apply();
+      $scope.activeNav = activeNav;
+      $scope.activeScene = activeScene;
+      $scope.$apply();
+      $scope.navClicked(undefined,$scope.activeNav,true);
     }
   });
 });

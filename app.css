@@ -23,7 +23,24 @@ main .container{
 	background-color:#fff;
 }
 
+#go_to_top{
+	position:fixed;
+	bottom: 0px;
+	width:100%;
+	z-index:10000;
+	display:none;
+}
 
+#go_to_top .content{
+	opacity: 0.4 !important;
+}
+#go_to_top img{
+	width:39px;
+}
+
+.show{
+	display:block !important;
+}
 .accent4 {
 	height: 22px;
 	font-family: Montserrat;
@@ -165,6 +182,7 @@ main .container{
 	width:33%;
 	display:inline-block;
 	vertical-align: top;
+	padding:10px;
 }
 
 /* parallax */
@@ -174,7 +192,7 @@ main .container{
 	top: -220px;
 	font-size:1px;
 }
-.parallax .content{
+.content{
 	max-width:1210px;
 	margin:0 auto;
 	padding:10px 20px;
@@ -226,7 +244,6 @@ main .container{
 	//background-image: url(img/par6.png);
 	background-position-x:left;
 	margin-top:-366px;
-	height: 1750px;
 	position:relative;
 	z-index:1000;
 	padding-top:300px;
@@ -526,6 +543,10 @@ base {
 	}
 	#roadmapHeader{
 		margin-bottom:100px !important;
+	}
+
+	#teamMembers{
+		width:100%;
 	}
 }
 

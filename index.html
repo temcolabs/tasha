@@ -449,8 +449,11 @@
 							blockchain technology and Interplanetary File System (IPFS).  Smart contracts are based on<br />
 							Ethereum and Eos. The design will achieve efficient storage and efficient data processing.
 						</div>
-						<div>
-							<img style ="width:100%;" src="img/IG_TECHNOLOGY@2x.png" />
+						<div style="text-align:center;">
+							<img style ="width:100%;
+													 max-width:892px;
+													 margin-left:30px;
+													 margin-bottom:400px;" src="img/IG_TECHNOLOGY@2x.png" />
 						</div>
 					</div>
 				</div>
@@ -885,7 +888,7 @@
 							<a name="team" style="top:-195px;" class="pin">&nbsp;</a>
 						</div>
 						<div>
-							<div class="portrait-container"
+							<div id="teamMembers" class="portrait-container"
 									 ng-repeat="teamMember in teamMembers">
 								<bio data="{{teamMember}}"/>
 							</div>
@@ -912,9 +915,34 @@
 								<bio data="{{advisor}}"/>
 							</div>
 						</div>
+					</div>
+				</div>
+
+				<div id="go_to_top">
+					<div class="content">
+						<div style="width: 39px;
+												float:right;
+												cursor:pointer;
+												text-align: center;"
+								 ng-click="navClicked($event,'home')">
+							<img src="img/go_to_top@2x.png" />
+							<div style="font-family: Montserrat;
+													font-size: 10px;
+													font-weight: 800;
+													font-style: normal;
+													font-stretch: normal;
+													line-height: 3.8;
+													letter-spacing: 0.3px;
+													text-align: center;
+													color: #202020;" id="go_to_top_text">
+								TOP
+							</div>
+						</div>
+					</div>
 				</div>
 
 			</div>
+
 			<!-- /container -->
 
 			<!-- footer -->
@@ -936,7 +964,6 @@
 			src="https://code.jquery.com/jquery-3.3.1.min.js"
 			integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
 			crossorigin="anonymous"></script>
-		</script>
 		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
 		<script src="js/bootstrap.bundle.js"></script>
 

@@ -1,6 +1,7 @@
 <div class="portrait">
 	<div class="mug" >
-
+		<div class="mug-inner">
+		</div>
 	</div>
 	<div class="team-name">
 		{{firstName}} {{lastName}}
@@ -8,9 +9,14 @@
 	<div class="team-title">
 		{{position}}
 	</div>
+	<div class="linkedin">
+		<img src="img/linkedinCopy4@2x.png" />
+	</div>
 	<div class="bio">
-		<ul ng-repeat="bio in bios">
-			<li>{{bio}}</li>
-		</ul>
+		<div ng-repeat="bio in bios">
+			<img src="img/ellipse620Copy8@2x.png" />
+			{{bio}}
+			{{bio}}
+		</div>
 	</div>
 </div>
