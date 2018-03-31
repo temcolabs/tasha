@@ -1,0 +1,11 @@
+{
+    "firstName":"Jisun",
+    "lastName":"Koh",
+    "position":"Laywer",
+    "bio":[
+      "Laywer Office in US",
+      "PhD in Law, John Marshall Law School",
+      "B.S. in Business, Washington University"          
+    ],    
+    "img": "bio/data/jisun_profile.png"
+  }

@@ -7,9 +7,13 @@ angular.module('team', ['bio'])
       link: function($scope) {
 
         $scope.advisors = [
-          'advisor1',
-          'advisor2',
-          'advisor3'
+          'gichae',
+          'dongjin',
+          'haneul',
+          'yujin',
+          'hawool',
+          'chris',
+          'jisun'
         ];
         $scope.teamMembers = [
           'brian_lee',

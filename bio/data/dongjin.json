@@ -1,0 +1,12 @@
+{
+  "firstName":"Dongjin",
+  "lastName":"Koo",
+  "position":"Investment Lead",
+  "bio":[
+    "BSK Investment",
+    "Fund manager at Brain Asset Management",
+    "M.S. in Accounting, UIUC",
+    "B.S. in Business, Seoul University"
+  ],
+  "img": "bio/data/dongjin_profile.png"
+}
