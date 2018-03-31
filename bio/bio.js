@@ -11,6 +11,8 @@ angular.module('bio', [])
             $scope.firstName = resp.data.firstName.toUpperCase();
             $scope.lastName = resp.data.lastName.toUpperCase();
             $scope.position = resp.data.position;
+            $scope.img = resp.data.img;
+            $scope.linkedInUrl = resp.data.linkedInUrl;            
             $scope.bios = resp.data.bio;
           });
       }

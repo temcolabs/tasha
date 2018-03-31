@@ -1,6 +1,6 @@
 <div class="portrait">
 	<div class="mug" >
-		<div class="mug-inner">
+		<div class="mug-inner" ng-style="{'background-image':'url(' + img + ')'}">
 		</div>
 	</div>
 	<div class="team-name">
@@ -9,8 +9,10 @@
 	<div class="team-title">
 		{{position}}
 	</div>
-	<div class="linkedin">
-		<img src="img/linkedinCopy4@2x.png" />
+	<div class="linkedin" ng-if="linkedInUrl">
+		<a ng-href="https://www.linkedin.com/in/{{linkedInUrl}}" target="_blank">
+			<img src="img/linkedinCopy4@2x.png" />
+		</a>
 	</div>
 	<div class="bio">
 		<div ng-repeat="bio in bios">

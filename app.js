@@ -58,6 +58,7 @@ app.controller('TashaCtrl', function ($scope, $timeout) {
     'brian_lee',
     'jaeseob_yoon',
     'hongsub_lim',
+    'yongchul',
     'saemi_hong',
     'natasha_woo',
     'sunha_hwang'
