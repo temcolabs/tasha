@@ -1,0 +1,21 @@
+#parallax11 {
+	background-color:#fff;
+	margin-bottom:250px;
+	float:left;
+	width:100%;
+}
+
+.portrait-container{
+	width:33%;
+	display:inline-block;
+	vertical-align: top;
+	padding:10px;
+}
+
+@media only screen and (max-width: 415px) {
+
+	#teamMembers{
+		width:100%;
+	}
+
+}

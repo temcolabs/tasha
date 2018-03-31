@@ -1,0 +1,27 @@
+#parallax8 {
+	background-color:#fff;
+	height: 1850px;
+}
+
+#parallax9 {
+	background:url('../img/par9.png');
+	background-color:#fff;
+	background-position-x:center;
+	height:2500px;
+	padding-top:186px;
+}
+
+#parallax10 {
+	background:url('../img/par10.png');
+	background-position-x:center;
+	margin-top: -375px;
+	height:4075px;
+	background-color:#fff;
+	padding-top:200px;
+//display:none;
+}
+
+.ellipse{
+	margin-top:-3px;
+	margin-right:10px;
+}

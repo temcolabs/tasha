@@ -1,0 +1,9 @@
+#parallax6 {
+//background-image: url(img/par6.png);
+	background-position-x:left;
+	margin-top:-366px;
+	position:relative;
+	z-index:1000;
+	padding-top:300px;
+	background-size:cover;
+}
