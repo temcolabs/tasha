@@ -1,0 +1,14 @@
+#parallax1{
+	background-image: url(../img/par1.png);
+	background-position-x:left;
+	min-height:1200px;
+	color:#fff;
+	padding-top:60px;
+}
+
+@media only screen and (max-width: 818px) {
+
+	#header1{
+		line-height: 1 !important;
+	}
+}

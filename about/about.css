@@ -1,0 +1,84 @@
+#parallax2{
+	background-image: url(../img/par2.png);
+	background-position-x:center;
+	min-height:1000px;
+	margin-top:-400px;
+	padding-top:250px;
+}
+
+#parallax3{
+	background-image: url(../img/par3.png);
+	background-position-x:center;
+	background-position-y: bottom;
+	background-color:#fff;
+	color:#fff;
+	height:1170px;
+}
+
+#parallax4 {
+	background-color:#fff;
+	height: 520px;
+}
+
+.accent4 {
+	height: 22px;
+	font-family: Montserrat;
+	font-size: 22px;
+	font-weight: bold;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: normal;
+	letter-spacing: normal;
+	text-align: left;
+	color: #344765;
+	text-transform:uppercase;
+}
+
+.normal2{
+	font-family: Raleway;
+	font-size: 16px;
+	font-weight: 600;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.38;
+	letter-spacing: 0.4px;
+	text-align: left;
+	color: #7f7f7f;
+}
+
+.icon-container {
+	flex-wrap:nowrap;
+}
+
+.icon-container img{
+	margin:0 20px;
+}
+
+.icon-container div{
+	margin-bottom:12px;
+}
+
+.icon-container div:first-child {
+	min-width:100px;
+}
+
+.max{
+	width:100%;
+	max-width:410px;
+}
+
+.bright{
+	color: #effbfd;
+}
+
+.light-blue{
+	color: #b9d8dd;
+}
+
+@media only screen and (max-width: 415px) {
+
+	#parallax4{
+		height:700px !important;
+	}
+
+}
