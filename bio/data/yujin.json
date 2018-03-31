@@ -1,0 +1,12 @@
+{
+    "firstName":"Yujin",
+    "lastName":"Jang",
+    "position":"Lawyer",
+    "bio":[
+      "Law Offices",
+      "Judicial notice",
+      "Judicial Research and Training Institute",
+      "B.S. in Business, Seoul University"
+    ],
+    "img": "bio/data/yujin_profile.png"    
+  }

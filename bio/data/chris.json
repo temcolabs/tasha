@@ -1,0 +1,11 @@
+{
+    "firstName":"Chris",
+    "lastName":"Hong",
+    "position":"Software Architecture",
+    "bio":[
+      "MBA, Chicago University",
+      "B.S. in CS, Chicago University",
+      "B.S. in Business, Washington University"      
+    ],
+    "img": "bio/data/chris_profile.png"
+  }
