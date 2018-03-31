@@ -15,6 +15,7 @@ angular.module('team', ['bio'])
           'brian_lee',
           'jaeseob_yoon',
           'hongsub_lim',
+          'yongchul',
           'saemi_hong',
           'natasha_woo',
           'sunha_hwang'

@@ -6,21 +6,22 @@
 
 .portrait .linkedin{
 	text-align:center;
-	margin-bottom:22px;
+	margin-bottom:22px;	
 }
 
 .portrait .linkedin img{
 	width: 29px;
 	height: 29px;
+	cursor: pointer;
 }
+
 .mug{
 	border: solid 4px #344765;
 }
 
 .mug-inner{
-	width:100%;
-	background-image: url(data/default.png);
-	background-size:contain;
+	width:100%;	
+	background-size:cover;
 	padding-bottom:100%;
 }
 
