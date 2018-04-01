@@ -16,3 +16,122 @@
 	background-position-y: bottom;
 	background-size: cover;
 }
+#igTechnology{
+	width: 100%;
+	max-width: 892px;
+	height: 828px;
+	background-image: url(../img/IG_TECHNOLOGY@2x.png);
+	margin-bottom: 400px;
+	background-size: contain;
+	background-repeat: no-repeat;
+	margin: 0 auto;
+}
+
+#bgTechnologyTop{
+	position: absolute;
+	right: 0;
+	top: 20px;
+}
+
+#bgTechnologyTop img{
+	width:408px;
+}
+
+#technologyHeader{
+	height: 47px;
+	margin-top:100px;
+	margin-bottom:39px;
+	font-family: Montserrat;
+	font-size: 48px;
+	font-weight: bold;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: normal;
+	letter-spacing: -1.2px;
+	text-align: center;
+	color: #384b69;
+}
+
+@media only screen and (max-width: 1050px) {
+
+	#igTechnology {
+		max-width:802.8px;
+	}
+
+	#dropTechnology{
+		height:276.3px;
+	}
+
+	#parallax6 {
+		height:1400px;
+	}
+
+	#bgTechnologyTop{
+		top: 50px;
+	}
+
+	#bgTechnologyTop img{
+		width:300px;
+	}
+}
+
+@media only screen and (max-width: 900px) {
+
+	#igTechnology {
+		max-width:713.6px;
+		background-image: url(../img/tech_ig_90_smaller@2x.png);
+	}
+
+	#dropTechnology{
+		height:245.6px;
+	}
+
+}
+
+
+@media only screen and (max-width: 770px) {
+
+	#parallax6 {
+		height:1400px;
+	}
+
+	#bgTechnologyTop{
+		top: 100px;
+	}
+
+	#bgTechnologyTop img{
+		width:200px;
+	}
+
+	#bgTechnologyBottom{
+		bottom: 150px;
+		position:relative;
+	}
+
+	#bgTechnologyBottom img{
+		width:200px;
+	}
+
+}
+
+@media only screen and (max-width: 400px) {
+	#igTechnology {
+		max-width:490.6px;
+	}
+
+	#dropTechnology{
+		//height:168.85px;
+	}
+
+	#parallax6 {
+		height:1100px;
+	}
+
+	#technologyHeader{
+		font-size: 38.5px;
+	}
+
+	#bgTechnologyTop{
+		display:none;
+	}
+}

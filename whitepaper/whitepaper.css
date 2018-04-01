@@ -105,6 +105,9 @@
 		margin-top: 150px;
 	}
 
+	#whitepaperHeader{
+		font-size:38.5px;
+	}
 }
 
 
@@ -120,11 +123,6 @@
 	#whitepaperBGGraphic{
 		margin-left: 0px;
 		margin-top: 50px;
-	}
-
-	#whitepaperHeader{
-		font-size:38.5px;
-		margin-bottom:29px;
 	}
 
 	.download{
