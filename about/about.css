@@ -10,7 +10,8 @@
 	background-image: url(../img/par3.png);
 	background-position-x:center;
 	background-position-y: bottom;
-	background-color:#212c3f;
+	position:relative;
+	z-index:2;
 	color:#fff;
 	min-height:1170px;
 	background-repeat:no-repeat;
@@ -18,7 +19,6 @@
 
 #parallax4 {
 	background-color:#fff;
-	height: 520px;
 }
 
 .about-header{
@@ -91,10 +91,52 @@
 	position:relative;
 	top:50px;
 }
+
+#dropOurMission{
+	margin: 0 auto;
+	margin-top: -212px;
+	position:relative;
+	width: 100px;
+	position:relative;
+	z-index:1;
+}
+
+#ourMissionHeader{
+	height: 48px;
+	margin-top:32px;
+	margin-bottom:79px;
+	text-transform: uppercase;
+	font-family: Montserrat;
+	font-size: 48px;
+	font-weight: bold;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: normal;
+	letter-spacing: -1.2px;
+	text-align: center;
+	color: #344765;
+}
+
+#ourMissionText{
+	font-family: Raleway;
+	font-size: 20px;
+	font-weight: 600;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.4;
+	letter-spacing: -0.6px;
+	text-align: center;
+	color: #808080;
+}
+
 @media only screen and (max-width: 1050px) {
 
 	.max{
 		width:80%;
+	}
+
+	#dropOurMission{
+		margin-top: -234px;
 	}
 
 }
@@ -126,6 +168,19 @@
 	.normal2{
 		font-size:23px;
 	}
+
+	#dropOurMission{
+		margin-top: -256px;
+	}
+
+	#ourMissionHeader{
+		font-size:55px;
+	}
+
+	#ourMissionText{
+		font-size:25px;
+	}
+
 }
 
 @media only screen and (max-width: 400px) {
@@ -141,11 +196,17 @@
 	.normal2{
 		font-size:16px;
 	}
-}
-@media only screen and (max-width: 415px) {
 
-	#parallax4{
-		height:700px !important;
+	#dropOurMission{
+		margin-top: -307px;
+	}
+
+	#ourMissionHeader{
+		font-size:38px;
+	}
+
+	#ourMissionText{
+		font-size:16px;
 	}
 
 }
