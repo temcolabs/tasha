@@ -3,15 +3,17 @@
 	background-position-x:center;
 	min-height:1000px;
 	margin-top: -350px;
+	background-size:cover;
 }
 
 #parallax3{
 	background-image: url(../img/par3.png);
 	background-position-x:center;
 	background-position-y: bottom;
-	background-color:#fff;
+	background-color:#212c3f;
 	color:#fff;
-	height:1170px;
+	min-height:1170px;
+	background-repeat:no-repeat;
 }
 
 #parallax4 {
@@ -19,8 +21,19 @@
 	height: 520px;
 }
 
+.about-header{
+	margin-bottom:76px;
+	font-family: Montserrat;
+	font-size: 48px;
+	font-weight: bold;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1;
+	letter-spacing: -1.2px;
+	text-align: left;
+	text-transform:uppercase;
+}
 .accent4 {
-	height: 22px;
 	font-family: Montserrat;
 	font-size: 22px;
 	font-weight: bold;
@@ -74,6 +87,61 @@
 	color: #b9d8dd;
 }
 
+#igHeaderRight{
+	position:relative;
+	top:50px;
+}
+@media only screen and (max-width: 1050px) {
+
+	.max{
+		width:80%;
+	}
+
+}
+
+@media only screen and (max-width: 900px) {
+
+	.max{
+		display:none;
+	}
+
+	#igHeaderRight{
+		position:relative;
+		top:0px;
+	}
+
+	.about-header{
+		font-size:55px;
+	}
+
+	.ig-left{
+		flex:auto;
+		max-width:100%;
+	}
+
+	.accent4{
+		font-size:30px;
+	}
+
+	.normal2{
+		font-size:23px;
+	}
+}
+
+@media only screen and (max-width: 400px) {
+
+	.about-header{
+		font-size:38px;
+	}
+
+	.accent4{
+		font-size:21px;
+	}
+
+	.normal2{
+		font-size:16px;
+	}
+}
 @media only screen and (max-width: 415px) {
 
 	#parallax4{
