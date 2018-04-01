@@ -6,9 +6,160 @@
 	padding-top:60px;
 }
 
+.header1{
+	margin-bottom:10px;
+	text-transform:uppercase;
+	font-family: Montserrat;
+	font-size: 50px;
+	font-weight: bold;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: normal;
+	letter-spacing: -1.3px;
+	text-align: left;
+	color: #ffffff;"
+}
+
+.header2{
+	height: 40px;
+	margin-bottom:30px;
+	text-transform:uppercase;
+	font-family: Montserrat;
+	font-size: 60px;
+	font-weight: bold;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 0.63;
+	letter-spacing: normal;
+	text-align: left;
+	color: #ffffff;
+}
+
+.header3{
+	height: 42px;
+	text-transform:uppercase;
+	font-family: Raleway;
+	font-size: 16px;
+	font-weight: 600;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.88;
+	letter-spacing: 1.2px;
+	text-align: left;
+	color: #ffffff;
+	width:541px;
+}
+#headerCubeLeft{
+	position:absolute;
+	left: -155px;
+	top: 75px;
+}
+
+#headerCube{
+	position: absolute;
+	right: 0px;
+	top: 325px;
+	width:1404px;
+	height:839px;
+	background-image: url(../img/HEADER_CUBE01@2x.png);
+	background-size:contain;
+	background-repeat:no-repeat;
+}
+
+#headerBinary{
+	position: absolute;
+	right: 220px;
+	top: 0px;
+	width:210px;
+	height:595px;
+	background-image: url(../img/headerBinaryCode.png);
+	background-repeat:no-repeat;
+}
+
+@media only screen and (max-width: 1400px) {
+	#headerCube{
+		right:-110px;
+	}
+
+	#headerBinary{
+		position: absolute;
+		right: 110px;
+		top: 0px;
+	}
+}
+
+
+@media (max-width: 1050px) {
+
+	.header1, .header2{
+		width:512px;
+	}
+
+	.header3{
+		width:315px;
+	}
+
+	#headerCube{
+		right:-150px;
+		width:1200px;
+	}
+
+	#headerBinary{
+		position: absolute;
+		right: 45px;
+		top: 0px;
+		//width:150px;
+	}
+
+}
+
+@media (max-width: 900px) {
+
+	#headerCube{
+		width:1000px;
+		top:500px;
+		right:-124px;
+	}
+
+	.header1{
+		font-size:60px;
+	}
+
+	.header2{
+		font-size:72px;
+	}
+
+}
+
+@media (max-width: 400px) {
+
+	#headerBinary{
+		display:none;
+	}
+
+	#headerCube{
+		width:800px;
+		top:585px;
+		right:-99px;
+	}
+
+	.header1{
+		font-size:42px;
+	}
+
+	.header2{
+		font-size:50.5px;
+	}
+
+	.header3{
+		font-size:14px;
+	}
+
+}
+
 @media only screen and (max-width: 818px) {
 
-	#header1{
+	.header1{
 		line-height: 1 !important;
 	}
 }

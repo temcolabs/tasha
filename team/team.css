@@ -12,7 +12,14 @@
 	padding:10px;
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 768px) {
+
+	.portrait-container{
+		width:50%;
+	}
+}
+
+@media only screen and (max-width: 415px) {
 
 	#teamMembers{
 		width:100%;
