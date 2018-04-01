@@ -15,7 +15,7 @@ angular.module('header', [])
 
         var headerTransform = new ScrollMagic.Scene({
           triggerElement: "#headerTransform",
-          offset:450
+          offset:300
         }).setClassToggle(".navbar", "navbar-color")
         //.addIndicators()
           .addTo($scope.$parent.controller);

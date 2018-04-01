@@ -18,6 +18,8 @@
 
 .navbar-toggler {
 	margin-right:20px;
+	position:absolute;
+	right:0px;
 }
 
 .nav-link{
@@ -29,11 +31,15 @@
 }
 
 .navbar-brand{
-	padding-left:20px;
+	margin-left:60px;
+	position:absolute;
+	background-image: url('../img/TEMCO LOGO@3x.png');
+	background-size:cover;
+	z-index:5000;
 }
 
 .nav-item:last-child{
-	padding-right:20px;
+	padding-right:60px;
 }
 
 .nav-item:last-child a{
@@ -47,19 +53,8 @@
 
 #navContainer {
 	width:100%;
-	position: relative;
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-	-ms-flex-wrap: wrap;
-	flex-wrap: wrap;
-	-webkit-box-align: center;
-	-ms-flex-align: center;
-	align-items: center;
-	-webkit-box-pack: justify;
-	-ms-flex-pack: justify;
-	justify-content: space-between;
-//padding: 0 20px;
+	padding-top:20px;
+	padding-bottom:20px;
 	margin: 0 auto;
 	height:75px;
 	vertical-align: middle;
@@ -84,21 +79,62 @@
 	margin-left:10px;
 }
 
-@media only screen and (max-width: 882px) {
-
-	.nav-link{
-		font-size:11px;
+@media (max-width: 1050px) {
+	.navbar-brand{
+		margin-left:40px;
+	}
+	.nav-item:last-child{
+		padding-right:40px;
 	}
 
-	.nav-item{
-		margin-left:5px;
+}
+
+@media (min-width: 900px) {
+
+	.navbar-expand-custom {
+		flex-direction: row;
+		flex-wrap: nowrap;
+		justify-content: flex-start;
+	}
+	.navbar-expand-custom .navbar-nav {
+		flex-direction: row;
+	}
+	.navbar-expand-custom .navbar-nav .nav-link {
+		padding-right: .5rem;
+		padding-left: .5rem;
+	}
+	.navbar-expand-custom .navbar-collapse {
+		display: flex!important;
+	}
+	.navbar-expand-custom .navbar-toggler {
+		display: none;
 	}
 }
 
+@media (max-width: 900px) {
+	.navbar-collapse{
+		padding-top:75px;
+		padding-left:65px;
+		padding-bottom:25px;
+	}
+	.collapse.show, .collapsing{
+		background-color:#202020;
+		margin-top:-25px;
+	}
+}
 @media only screen and (max-width: 768px) {
 
 	.navbar-collapse {
 		background-color: #202020 !important;
+	}
+
+}
+
+@media only screen and (max-width: 400px) {
+
+	.navbar-brand{
+		width:38px !important;
+		background-image: url('../img/temcoLogoSmall.png');
 	}
 
 }
