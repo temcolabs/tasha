@@ -3,24 +3,37 @@
 	background-position-x:center;
 	min-height:1000px;
 	margin-top: -350px;
+	background-size:cover;
 }
 
 #parallax3{
 	background-image: url(../img/par3.png);
 	background-position-x:center;
 	background-position-y: bottom;
-	background-color:#fff;
+	position:relative;
+	z-index:2;
 	color:#fff;
-	height:1170px;
+	min-height:1170px;
+	background-repeat:no-repeat;
 }
 
 #parallax4 {
 	background-color:#fff;
-	height: 520px;
 }
 
+.about-header{
+	margin-bottom:76px;
+	font-family: Montserrat;
+	font-size: 48px;
+	font-weight: bold;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1;
+	letter-spacing: -1.2px;
+	text-align: left;
+	text-transform:uppercase;
+}
 .accent4 {
-	height: 22px;
 	font-family: Montserrat;
 	font-size: 22px;
 	font-weight: bold;
@@ -74,10 +87,126 @@
 	color: #b9d8dd;
 }
 
-@media only screen and (max-width: 415px) {
+#igHeaderRight{
+	position:relative;
+	top:50px;
+}
 
-	#parallax4{
-		height:700px !important;
+#dropOurMission{
+	margin: 0 auto;
+	margin-top: -212px;
+	position:relative;
+	width: 100px;
+	position:relative;
+	z-index:1;
+}
+
+#ourMissionHeader{
+	height: 48px;
+	margin-top:32px;
+	margin-bottom:79px;
+	text-transform: uppercase;
+	font-family: Montserrat;
+	font-size: 48px;
+	font-weight: bold;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: normal;
+	letter-spacing: -1.2px;
+	text-align: center;
+	color: #344765;
+}
+
+#ourMissionText{
+	font-family: Raleway;
+	font-size: 20px;
+	font-weight: 600;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.4;
+	letter-spacing: -0.6px;
+	text-align: center;
+	color: #808080;
+}
+
+@media only screen and (max-width: 1050px) {
+
+	.max{
+		width:80%;
+	}
+
+	#dropOurMission{
+		margin-top: -234px;
+	}
+
+}
+
+@media only screen and (max-width: 900px) {
+
+	.max{
+		display:none;
+	}
+
+	#igHeaderRight{
+		position:relative;
+		top:0px;
+	}
+
+	.about-header{
+		font-size:55px;
+	}
+
+	.ig-left{
+		flex:auto;
+		max-width:100%;
+	}
+
+	.accent4{
+		font-size:30px;
+	}
+
+	.normal2{
+		font-size:23px;
+	}
+
+	#dropOurMission{
+		margin-top: -256px;
+	}
+
+	#ourMissionHeader{
+		font-size:55px;
+	}
+
+	#ourMissionText{
+		font-size:25px;
+	}
+
+}
+
+@media only screen and (max-width: 400px) {
+
+	.about-header{
+		font-size:38px;
+	}
+
+	.accent4{
+		font-size:21px;
+	}
+
+	.normal2{
+		font-size:16px;
+	}
+
+	#dropOurMission{
+		margin-top: -307px;
+	}
+
+	#ourMissionHeader{
+		font-size:38px;
+	}
+
+	#ourMissionText{
+		font-size:16px;
 	}
 
 }
