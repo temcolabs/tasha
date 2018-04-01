@@ -1,57 +1,54 @@
 <div style="margin: 0 auto;
 										width: 100px;
 										margin-top: -209px;;">
-	<img style="width: 100px;"
-			 src="img/drop_team.png" />
+	<img style="width: 100px;" src="img/drop_team.png" />
 </div>
 
 <div id="parallax11" class="parallax">
-
 	<div class="content">
 		<div style="height: 48px;
-												margin-top:82px;
-												margin-bottom:89px;
-												font-family: Montserrat;
-												font-size: 48px;
-												font-weight: bold;
-												font-style: normal;
-												font-stretch: normal;
-												line-height: normal;
-												letter-spacing: -1.2px;
-												text-align: center;
-												color: #344765;">
+			 margin-top:82px;
+			 margin-bottom:89px;
+			 font-family: Montserrat;
+			 font-size: 48px;
+			 font-weight: bold;
+			 font-style: normal;
+			 font-stretch: normal;
+			 line-height: normal;
+			 letter-spacing: -1.2px;
+			 text-align: center;
+			 color: #344765;">
 			TEAM
 			<img style="margin-top: 15px;" class="dot" src="img/copy9@2x.png" />
 			<a name="team" style="top:-195px;" class="pin">&nbsp;</a>
 		</div>
 		<div>
-			<div id="teamMembers" class="portrait-container"
-					 ng-repeat="teamMember in teamMembers">
-				<bio data="{{teamMember}}"/>
+			<div id="teamMembers" class="portrait-container" ng-repeat="teamMember in teamMembers">
+				<bio data="{{teamMember}}" />
 			</div>			
-   </div>
-		</div>
-		<div style="height: 48px;
-												margin-bottom:89px;
-												font-family: Montserrat;
-												font-size: 48px;
-												font-weight: bold;
-												font-style: normal;
-												font-stretch: normal;
-												line-height: normal;
-												letter-spacing: -1.2px;
-												text-align: center;
-												margin-top: 74px;
-												width: 100%;
-												color: #344765;">
-			ADVISORY
-			<img style="margin-top: 15px;" class="dot" src="img/copy9@2x.png" />
-		</div>
-		<div>				
-			<div class="portrait-container"
-					 ng-repeat="advisor in advisors">
-				<bio data="{{advisor}}"/>
-			</div>
 		</div>
 	</div>
+	<div class="content">
+	<div style="height: 48px;
+	    margin-bottom:89px;
+		font-family: Montserrat;
+		font-size: 48px;
+	    font-weight: bold;
+     	font-style: normal;
+		font-stretch: normal;
+		line-height: normal;
+		letter-spacing: -1.2px;
+		text-align: center;
+		margin-top: 74px;												
+		color: #344765;">
+		ADVISORY
+		<img style="margin-top: 15px;" class="dot" src="img/copy9@2x.png" />
+	</div>
+	<div>		
+		<div class="portrait-container" ng-repeat="advisor in advisors">
+			<bio data="{{advisor}}" />
+		</div>
+	</div>
+	</div>
+</div>
 </div>
