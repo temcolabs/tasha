@@ -18,20 +18,122 @@
 	font-stretch: normal;
 	line-height: normal;
 	letter-spacing: 0.9px;
-	color: #575757;
-	margin-bottom:9px;
+	padding-top:24px;
 }
 
-.download2{
-	height: 12px;
+.download a{
+	color: #575757;
+}
+.download a{
+	text-decoration: none;
+}
+
+#whitepaperGraphic{
+	margin-top: -330px;
+	margin-right: -350px;
+}
+
+#whitepaperHeader{
+	height: 46px;
+	margin-bottom:59px;
 	text-transform: uppercase;
 	font-family: Montserrat;
-	font-size: 14px;
-	font-weight: 600;
+	font-size: 48px;
+	font-weight: bold;
 	font-style: normal;
 	font-stretch: normal;
-	line-height: 1.57;
-	letter-spacing: normal;
-	color: #7d888a;
+	margin-top:125px;
+	line-height: normal;
+	letter-spacing: -1.2px;
+	text-align: left;
+	color: #ffffff;
 }
 
+#buttonBase{
+	background:url('../img/BUTTON BASE@2x.png');
+	background-repeat:no-repeat;
+	text-align:center;
+	margin-top:25px;
+	width: 255px;
+	height: 71px;
+}
+
+#whitepaperBGGraphic{
+	background:url('../img/BG ELEMENTS_WHITEPAPER.png');
+	width: 100%;
+	height: 800px;
+	position: absolute;
+	z-index: 1;
+	background-repeat: no-repeat;
+	margin-top: -100px;
+	margin-left: 700px;
+	//display:none;
+}
+
+@media only screen and (max-width: 1050px) {
+	#whitepaperGraphic{
+		width:932px;
+	}
+	#whitepaperBGGraphic{
+		margin-left: 300px;
+		margin-top: 50px;
+	}
+
+}
+
+@media only screen and (max-width: 900px) {
+	#whitepaperHeader{
+		margin-bottom:29px;
+	}
+
+	#whitepaperGraphic{
+		width:829px;
+		margin-top: -70px;
+		margin-right: -300px;
+	}
+
+	#whitepaperContainer{
+		position:relative;
+		top:-200px;
+	}
+}
+
+@media only screen and (max-width: 770px) {
+
+	#whitepaperBGGraphic{
+		margin-left: 0px;
+		margin-top: 150px;
+	}
+
+}
+
+
+@media only screen and (max-width: 400px) {
+
+	#whitepaperGraphic{
+		width:829px;
+		margin-top: -100px;
+		margin-right: -300px;
+		margin-left: -350px;
+	}
+
+	#whitepaperBGGraphic{
+		margin-left: 0px;
+		margin-top: 50px;
+	}
+
+	#whitepaperHeader{
+		font-size:38.5px;
+		margin-bottom:29px;
+	}
+
+	.download{
+		font-size:12.5px;
+		padding-top:20px;
+	}
+
+	#buttonBase{
+		width: 188px;
+		height: 53px;
+	}
+}
