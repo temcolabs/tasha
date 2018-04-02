@@ -1,30 +1,33 @@
 #parallax6 {
 	background-image: url(../img/par6.png);
 	background-position-x:center;
-	top:-516px;
+	margin-top:-516px;
 	position:relative;
 	z-index:1002;
 	padding-top:300px;
+	background-repeat: no-repeat;
+	min-height:1757px;
+	background-size: auto 100%;
 }
 
 #dropTechnology{
 	margin: 0 auto;
-	margin-top: -130px;
+	margin-top: -106px;
 	width: 100px;
 	background-image: url(../img/cube_drop.png);
 	height: 307px;
 	background-position-y: bottom;
 	background-size: cover;
 }
-#igTechnology{
-	width: 100%;
+#igTechnology, #igTechnologySmall{
 	max-width: 892px;
-	height: 828px;
-	background-image: url(../img/IG_TECHNOLOGY@2x.png);
-	margin-bottom: 400px;
-	background-size: contain;
-	background-repeat: no-repeat;
+	width:100%;
 	margin: 0 auto;
+	margin-bottom: 300px;
+}
+
+#igTechnologySmall{
+	display:none;
 }
 
 #bgTechnologyTop{
@@ -52,6 +55,15 @@
 	color: #384b69;
 }
 
+#bgTechnologyBottom{
+	bottom: 40px;
+	position:absolute;
+	z-index:20;
+}
+
+#bgTechnologyBottom img{
+	width:300px;
+}
 @media only screen and (max-width: 1050px) {
 
 	#igTechnology {
@@ -60,10 +72,11 @@
 
 	#dropTechnology{
 		height:276.3px;
+		margin-top: -118px;
 	}
 
 	#parallax6 {
-		height:1400px;
+		//height:1400px;
 	}
 
 	#bgTechnologyTop{
@@ -73,17 +86,31 @@
 	#bgTechnologyTop img{
 		width:300px;
 	}
+
+	#bgTechnologyBottom{
+		bottom: 100px;
+	}
+
+	#bgTechnologyBottom img{
+		width:200px;
+	}
+
 }
 
 @media only screen and (max-width: 900px) {
 
 	#igTechnology {
+		display:none;
+	}
+
+	#igTechnologySmall {
+		display:block;
 		max-width:713.6px;
-		background-image: url(../img/tech_ig_90_smaller@2x.png);
 	}
 
 	#dropTechnology{
 		height:245.6px;
+		margin-top:-106px;
 	}
 
 }
@@ -92,7 +119,7 @@
 @media only screen and (max-width: 770px) {
 
 	#parallax6 {
-		height:1400px;
+		//height:1400px;
 	}
 
 	#bgTechnologyTop{
@@ -112,11 +139,15 @@
 		width:200px;
 	}
 
+	#dropTechnology{
+		margin-top:-129px;
+	}
 }
 
 @media only screen and (max-width: 400px) {
-	#igTechnology {
-		max-width:490.6px;
+	#igTechnologySmall {
+		max-width:400px;
+		//height:400px;
 	}
 
 	#dropTechnology{
@@ -124,7 +155,7 @@
 	}
 
 	#parallax6 {
-		height:1100px;
+		//height:1100px;
 	}
 
 	#technologyHeader{
@@ -132,6 +163,10 @@
 	}
 
 	#bgTechnologyTop{
+		display:none;
+	}
+
+	#bgTechnologyBottom{
 		display:none;
 	}
 }
