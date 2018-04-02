@@ -28,11 +28,13 @@
 	.mug:hover .mug-inner {
 		opacity: 0.7;
 		background-color: #73beca;
+		background-blend-mode: multiply;
 	}
 
 	.mug:hoverr {
 		opacity: 0.7;
 		background-color: #73beca;
+		background-blend-mode: multiply;
 	}
 	
 	.mug:hover .mug-logo-container {
