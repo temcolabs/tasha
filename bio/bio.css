@@ -49,6 +49,12 @@
 	}
 }
 
+@media only screen and (max-width: 760px) {
+    .mug-logo-container {
+        display: none;
+    }
+}
+
 
 .mug{
 	border: solid 4px #344765;
