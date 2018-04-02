@@ -7,7 +7,7 @@ var app = angular.module('TashaApp', [
   'prototype',
   'token',
   'team',
-  'footer'
+  'footer',
 ]);
 
 app.controller('TashaCtrl', function ($scope, $timeout) {

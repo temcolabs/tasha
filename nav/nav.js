@@ -26,12 +26,10 @@ angular.module('nav', [])
           {
             title:'team'
           }
-          /**
           ,
           {
-            title:'notice'
+            title:'community'
           }
-          **/
         ];
 
       }
