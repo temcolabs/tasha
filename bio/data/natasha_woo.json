@@ -1,11 +1,13 @@
 {
   "firstName":"Natasha",
   "lastName":"Woo",
-  "position":"Lead UI/UX Designer",
+  "position":"Design Director",
   "bio":[
     "Senior UX Designer at Newsweek",
     "UI/UX Visual Designer at NBC",
     "BFA in Communication Design & Tech, Parsons School of Design"
 
-  ]
+  ],
+  "linkedInUrl": "natashawoo",
+  "isTeam": true
 }

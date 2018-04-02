@@ -1,10 +1,15 @@
 <div class="portrait">
-	<div class="mug" >
+	<div class="mug">
 		<div class="mug-inner" ng-style="{'background-image':'url(' + img + ')'}">
+		</div>
+		<div class="mug-logo-container" ng-show="isTeam">
+			<div class="mug-logo">
+				<img src="img/profile_temco_logo.png" />
+			</div>
 		</div>
 	</div>
 	<div class="team-name">
-		{{firstName}} {{lastName}}
+		{{firstName}} {{lastName}} {{isTeam}}
 	</div>
 	<div class="team-title">
 		{{position}}
@@ -16,9 +21,7 @@
 	</div>
 	<div class="bio">
 		<div ng-repeat="bio in bios">
-			<img src="img/ellipse620Copy8@2x.png" />
-			{{bio}}
-			{{bio}}
+			<img src="img/ellipse620Copy8@2x.png" /> {{bio}}
 		</div>
 	</div>
 </div>

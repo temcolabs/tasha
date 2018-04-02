@@ -11,5 +11,6 @@
     "B.S. in CS, SUNY at Stony Brook"
   ],
   "img": "bio/data/brian_lee_profile.jpg",
-  "linkedInUrl": "brianleenj"
+  "linkedInUrl": "brianleenj",
+  "isTeam": true
 }

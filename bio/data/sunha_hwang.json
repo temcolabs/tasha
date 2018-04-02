@@ -1,10 +1,11 @@
 {
   "firstName":"Sunah",
   "lastName":"Hwang",
-  "position":"UI/UX Designer",
+  "position":"Lead Designer",
   "bio":[
     "Video Communication App Project, UI/UX Designer at WAVY",
     "Chatbot Collection App Project, UI/UX Designer at SAVO"
   ],
-  "img": "bio/data/sunha_profile.jpg"
+  "img": "bio/data/sunha_profile.jpg",
+  "isTeam": true
 }
