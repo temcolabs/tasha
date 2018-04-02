@@ -6,5 +6,6 @@
     "Marketing Expertise, Steel Business Team at POSCO",
     "B.S. in Business Administration, Yonsei University"
   ],
-  "img": "bio/data/hongsub_profile.jpg"
+  "img": "bio/data/hongsub_profile.jpg",
+  "isTeam": true
 }

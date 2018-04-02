@@ -15,6 +15,39 @@
 	cursor: pointer;
 }
 
+@media only screen and (min-width: 760px) {
+		
+	.mug-logo-container {
+		opacity: 0;
+		transition: .5s ease;			
+		transform: translate(-50%, -50%);
+		-ms-transform: translate(-50%, -50%);
+		text-align: center;
+	}
+
+	.mug:hover .mug-inner {
+		opacity: 0.7;
+		background-color: #73beca;
+	}
+
+	.mug:hoverr {
+		opacity: 0.7;
+		background-color: #73beca;
+	}
+	
+	.mug:hover .mug-logo-container {
+		opacity: 1;
+	}
+
+
+	.mug-logo  {
+		position: absolute;
+		top: -90px;
+		left: 210px;	
+	}
+}
+
+
 .mug{
 	border: solid 4px #344765;
 }

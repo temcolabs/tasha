@@ -8,5 +8,6 @@
     "IR Manager, Investor Relations Team at POSCO",
     "M.S. in Accounting, UIUC"
   ],
-  "img": "bio/data/jaeseob_profile.jpg"               
+  "img": "bio/data/jaeseob_profile.jpg",
+  "isTeam": true               
 }

@@ -57,6 +57,29 @@
 	color: #ffffff;
 }
 
+#bgTechnologyBottom{
+	top: -200px;
+	position:absolute;
+	z-index:20;
+}
+
+#bgTechnologyBottom img{
+	width:408px;
+}
+
+@media only screen and (max-width: 1050px) {
+
+	#bgTechnologyBottom{
+		top: -65px;
+	}
+
+
+	#bgTechnologyBottom img{
+		width:250px;
+	}
+
+}
+
 @media only screen and (max-width: 850px) {
 
 	.timeline-text{
@@ -194,6 +217,14 @@
 
 	#roadmapHeader{
 		margin-bottom:100px !important;
+	}
+
+}
+
+@media only screen and (max-width: 400px) {
+
+	#bgTechnologyBottom{
+		display:none;
 	}
 
 }

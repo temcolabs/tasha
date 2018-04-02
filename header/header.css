@@ -115,10 +115,14 @@
 
 @media (max-width: 900px) {
 
+	#headerBinary{
+		display:none;
+	}
+
 	#headerCube{
-		width:1000px;
-		top:500px;
-		right:-124px;
+		width: 1000px;
+		top: 500px;
+		right: -124px;
 	}
 
 	.header1{
@@ -138,9 +142,9 @@
 	}
 
 	#headerCube{
-		width:800px;
-		top:585px;
-		right:-99px;
+		width: 800px;
+		top: 585px;
+		right: -99px;
 	}
 
 	.header1{

@@ -13,6 +13,7 @@ angular.module('bio', [])
             $scope.position = resp.data.position;
             $scope.img = resp.data.img;
             $scope.linkedInUrl = resp.data.linkedInUrl;            
+            $scope.isTeam = resp.data.isTeam;            
             $scope.bios = resp.data.bio;
           });
       }
