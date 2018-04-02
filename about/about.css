@@ -60,6 +60,7 @@
 
 .icon-container {
 	flex-wrap:nowrap;
+	margin-bottom: 15px;
 }
 
 .icon-container img{
@@ -67,7 +68,7 @@
 }
 
 .icon-container div{
-	margin-bottom:12px;
+	margin-bottom:5px;
 }
 
 .icon-container div:first-child {
@@ -89,7 +90,7 @@
 
 #igHeaderRight{
 	position:relative;
-	top:50px;
+	top:0px;
 }
 
 #dropOurMission{
