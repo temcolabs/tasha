@@ -39,3 +39,8 @@ footer .social-media img {
 	height: 40px;
 	margin-right:14px;
 }
+
+.footer-logo{
+	object-fit: contain;
+	font-family: 'object-fit: contain;';
+}
