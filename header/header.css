@@ -68,8 +68,8 @@
 
 #headerBinary{
 	position: absolute;
-	right: 220px;
-	top: 0px;
+	right: 65px;
+	top: 35px;
 	width:210px;
 	height:595px;
 	background-image: url(../img/headerBinaryCode.png);
@@ -83,8 +83,8 @@
 
 	#headerBinary{
 		position: absolute;
-		right: 110px;
-		top: 0px;
+		right: 65px;
+		top: 35px;
 	}
 }
 
@@ -106,9 +106,9 @@
 
 	#headerBinary{
 		position: absolute;
-		right: 45px;
-		top: 0px;
-		//width:150px;
+		right: 35px;
+		top: 35px;
+		--width:150px;
 	}
 
 }
