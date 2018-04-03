@@ -110,13 +110,25 @@
 	}
 }
 
+@media only screen and (max-width: 700px) {
 
-@media only screen and (max-width: 400px) {
+	#whitepaperContainer{
+		top: -300px;
+	}
 
 	#whitepaperGraphic{
-		width:829px;
-		margin-top: -100px;
-		margin-right: -300px;
+		width: 750px;
+		margin-top: 120px;
+	}
+}
+
+
+@media only screen and (max-width: 415px) {
+
+	#whitepaperGraphic{
+		width:600px;
+		margin-top: 70px;
+		margin-right: -250px;
 		margin-left: -350px;
 	}
 
