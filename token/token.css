@@ -124,10 +124,43 @@
 	position: absolute;
 	z-index: 1;
 }
+
+@media only screen and (max-width: 1380px) {
+	#parallax9{
+		height: 1900px;
+	}
+
+}
+
+@media only screen and (max-width: 1300px) {
+	#parallax9{
+		height: 1800px;
+	}
+
+}
+
+@media only screen and (max-width: 1300px) {
+	#parallax9{
+		height: 1700px;
+	}
+
+}
+
+@media only screen and (max-width: 1250px) {
+	#parallax9{
+		height: 1700px;
+	}
+
+}
+
 @media only screen and (max-width: 1050px) {
 	#dropToken{
 		height: 276px;
 		width:90px;
+	}
+
+	#parallax9{
+		height: 1550px;
 	}
 
 }
@@ -164,6 +197,10 @@
 
 	.timeline-text{
 		font-size:20px;
+	}
+
+	#parallax9{
+		height: 1450px;
 	}
 
 }
@@ -260,7 +297,12 @@
 		font-size:18px;
 	}
 
+	#parallax9{
+		height: 1350px;
+	}
+
 }
+
 
 @media only screen and (max-width: 515px) {
 
@@ -271,6 +313,18 @@
 
 	.timeline-text{
 		font-size:16px;
+	}
+
+	#parallax9{
+		height: 1250px;
+	}
+
+}
+
+@media only screen and (max-width: 440px) {
+
+	#parallax9{
+		height: 1200px;
 	}
 
 }
