@@ -129,6 +129,10 @@
 	color: #808080;
 }
 
+#igHeaderMobile{
+	display: none;
+}
+
 @media only screen and (max-width: 1050px) {
 
 	.max{
@@ -142,6 +146,14 @@
 }
 
 @media only screen and (max-width: 900px) {
+
+	#igHeaderDesktop{
+		display: none;
+	}
+
+	#igHeaderMobile{
+		display: block;
+	}
 
 	.max{
 		display:none;
