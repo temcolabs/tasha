@@ -18,7 +18,7 @@
 	font-stretch: normal;
 	line-height: normal;
 	letter-spacing: 0.9px;
-	padding-top:24px;
+	padding-top:18px;
 }
 
 .download a{
@@ -29,7 +29,7 @@
 }
 
 #whitepaperGraphic{
-	margin-top: -330px;
+	margin-top: -430px;
 	margin-right: -350px;
 }
 
@@ -65,9 +65,9 @@
 	position: absolute;
 	z-index: 1;
 	background-repeat: no-repeat;
-	margin-top: -100px;
+	margin-top: -80px;
 	margin-left: 700px;
-	//display:none;
+	--display:none;
 }
 
 @media only screen and (max-width: 1050px) {
@@ -127,7 +127,7 @@
 
 	.download{
 		font-size:12.5px;
-		padding-top:20px;
+		padding-top:18px;
 	}
 
 	#buttonBase{
