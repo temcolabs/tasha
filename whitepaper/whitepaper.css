@@ -65,8 +65,8 @@
 	position: absolute;
 	z-index: 1;
 	background-repeat: no-repeat;
-	margin-top: -80px;
-	margin-left: 700px;
+	--margin-top: -80px;
+	margin-left: 500px;
 	--display:none;
 }
 
