@@ -8,10 +8,10 @@
 			</div>
 		</div>
 	</div>
-	<div class="team-name">
+	<div class="team-name text-sub-category">
 		{{firstName}} {{lastName}}
 	</div>
-	<div class="team-title">
+	<div class="team-title text-desc">
 		{{position}}
 	</div>
 	<div class="linkedin" ng-if="linkedInUrl">
@@ -20,7 +20,7 @@
 		</a>
 	</div>
 	<div class="bio">
-		<div ng-repeat="bio in bios">
+		<div ng-repeat="bio in bios" class="text-desc">
 			<img src="img/ellipse620Copy8@2x.png" /> {{bio}}
 		</div>
 	</div>

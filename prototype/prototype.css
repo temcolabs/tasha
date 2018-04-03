@@ -96,3 +96,15 @@
 		margin-left:-780px;
 	}
 }
+
+@media only screen and (max-width: 365px) {
+
+	#prototypeHeader{
+		margin-bottom: 150px;
+		left: 0px;
+	}
+
+	#prototype{
+		
+	}
+}
