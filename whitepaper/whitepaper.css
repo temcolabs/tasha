@@ -132,14 +132,13 @@
 @media only screen and (max-width: 414px) and (max-device-height: 736px) {
 	#whitepaperGraphic{
 		width:600px;
-		margin-top: 70px;
-		margin-right: -250px;
-		margin-left: -350px;
+		margin-right: 0px;
+		margin-left: 0px;			
 	}
 
 	#whitepaperBGGraphic{
 		margin-left: 0px;
-		margin-top: 50px;
+		margin-top: -130px;
 	}
 
 	.download{
@@ -157,20 +156,82 @@
 		margin-right: 0px !important;		
 		margin-bottom: 10px;
 	}
+
+	#buttonBase{				
+		width: 140px;
+		height: 35px;
+	}
+
+	.download2{
+		display: none;
+	}
+
+	.download{
+		padding-top: 10px;		
+	}
+
+	#buttonBase{
+		margin-top: -30px;
+	}
+
+	#parallax6{
+		margin-top: -670px !important;	
+	}
 }
 
 
 /* iphone x  */
 @media only screen and (max-width: 375px) and (max-device-height: 812px) {
+
+	#whitepaperGraphic{
+		width:600px;
+		margin-right: 0px;
+		margin-left: 0px;	
+	}
+
+	#whitepaperBGGraphic{
+		margin-left: 0px;
+		margin-top: -130px;
+	}
+
 	#dot-img{		
 		width: 7px !important;		
 		margin-right: 0px !important;		
 		margin-bottom: 10px;
+	}
+
+	#buttonBase{				
+		width: 140px;
+		height: 35px;
+	}
+
+	.download2{
+		display: none;
+	}
+
+	.download{
+		padding-top: 10px;
+		font-size:12.5px;		
+	}
+
+	#buttonBase{
+		margin-top: -30px;
+	}
+
+	#parallax6{
+		margin-top: -670px !important;		
 	}
 }
 
 /* galxay  */
 @media only screen and (max-width: 360px) {
 	
-	
+	#parallax6{
+		margin-top: -670px !important;		
+	}
+
+	#whitepaperBGGraphic {
+		margin-left: 0px;
+		margin-top: -130px;
+	}
 }

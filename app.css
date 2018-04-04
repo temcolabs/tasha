@@ -171,6 +171,25 @@ main .container{
 
 }
 
+/* iphone x  */
+@media only screen and (max-width: 375px) and (max-device-height: 812px) {
+	.text-main{
+		font-size: 23px !important;
+	}
+
+	.text-category{
+		font-size: 24px !important;
+	}
+
+	.text-sub-category{
+		font-size: 17px !important;
+	}
+
+	.text-desc{
+		font-size: 13px !important;
+	}
+}
+
 /* iphone 6+, 6s+, 7+, 8+  */
 
 /* end of mobile */
