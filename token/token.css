@@ -180,7 +180,7 @@
 	#igTokenSmall{
 		display:block;
 	}
-	
+
 	#tokenText1{
 		font-size:23px;
 	}
@@ -394,6 +394,24 @@
 	.token-header{
 		margin-bottom: 0px !important;
 	}
+
+	#drop-distro-img {
+		width: 60px !important;
+		margin-left: 18px !important;
+	}
+
+	.token-dist-container{
+		margin-bottom: 30px !important;
+	}
+
+	
+	#token-dist-img{
+		width: 100% !important;
+	}
+
+	#parallax9 {
+		height: 900px !important;
+	}
 }
 
 /* iphone 6 7 8 plus */
@@ -416,6 +434,24 @@
 
 	.token-header{
 		margin-bottom: 0px !important;
+	}
+
+	#drop-distro-img {
+		width: 60px !important;
+		margin-left: 18px !important;
+	}
+
+	.token-dist-container{
+		margin-bottom: 30px !important;
+	}
+
+	
+	#token-dist-img{
+		width: 100% !important;
+	}
+
+	#parallax9 {
+		height: 900px !important;
 	}
 
 }
@@ -442,6 +478,24 @@
 	.token-header{
 		margin-bottom: 0px !important;
 	}
+
+	#drop-distro-img {
+		width: 60px !important;
+		margin-left: 18px !important;
+	}
+
+	.token-dist-container{
+		margin-bottom: 30px !important;
+	}
+
+	
+	#token-dist-img{
+		width: 100% !important;
+	}
+
+	#parallax9 {
+		height: 900px !important;
+	}
 }
 
 /* galxay  */
@@ -464,6 +518,23 @@
 
 	.token-header{
 		margin-bottom: 0px !important;
+	}
+
+	#drop-distro-img {
+		width: 60px !important;
+		margin-left: 18px !important;
+	}
+
+	.token-dist-container{
+		margin-bottom: 30px !important;
+	}
+
+	#token-dist-img{
+		width: 100% !important;
+	}
+
+	#parallax9 {
+		height: 900px !important;
 	}
 
 }
