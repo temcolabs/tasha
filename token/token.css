@@ -412,6 +412,12 @@
 	#parallax9 {
 		height: 900px !important;
 	}
+
+	#drop-roadmap-img{
+		width: 60px !important;
+		margin-left: 18px !important;
+		margin-top: 100px;
+	}
 }
 
 /* iphone 6 7 8 plus */
@@ -452,6 +458,12 @@
 
 	#parallax9 {
 		height: 900px !important;
+	}
+
+	#drop-roadmap-img{
+		width: 60px !important;
+		margin-left: 18px !important;
+		margin-top: 100px;
 	}
 
 }
@@ -496,6 +508,12 @@
 	#parallax9 {
 		height: 900px !important;
 	}
+
+	#drop-roadmap-img{
+		width: 60px !important;
+		margin-left: 18px !important;
+		margin-top: 100px;
+	}
 }
 
 /* galxay  */
@@ -535,6 +553,12 @@
 
 	#parallax9 {
 		height: 900px !important;
+	}
+
+	#drop-roadmap-img{
+		width: 60px !important;
+		margin-left: 18px !important;
+		margin-top: 100px;
 	}
 
 }

@@ -142,6 +142,10 @@ main .container{
 	.text-desc{
 		font-size: 13px !important;
 	}
+
+	.text-small{
+		font-size: 12px !important;
+	}
 }
 
 /* iphone 6 7 8 plus */
@@ -165,6 +169,10 @@ main .container{
 
 	.text-desc{
 		font-size: 13px !important;
+	}
+
+	.text-small{
+		font-size: 12px !important;
 	}
 }
 
@@ -193,6 +201,10 @@ main .container{
 	.text-desc{
 		font-size: 13px !important;
 	}
+
+	.text-small{
+		font-size: 12px !important;
+	}
 }
 
 /* galxay  */
@@ -216,6 +228,10 @@ main .container{
 
 	.text-desc{
 		font-size: 13px !important;
+	}
+
+	.text-small{
+		font-size: 12px !important;
 	}
 }
 
