@@ -122,7 +122,7 @@ main .container{
 }
 
 /* iphone 6+, 6s+, 7+, 8+  */
-@media only screen and (max-width: 415px) {
+@media only screen and (max-width: 414px) {
 
 	.hide-375{
 		display:none;
@@ -154,19 +154,19 @@ main .container{
 }
 
 /* iphone x 7 8  */
-@media only screen and (max-width: 376px) {
+@media only screen and (max-width: 375px) {
 
 }
 
 /* galxay  */
-@media only screen and (max-width: 361px) {
+@media only screen and (max-width: 360px) {
 
 
 
 }
 
 /* iphone 3,4,5  */
-@media only screen and (max-width: 321px) {
+@media only screen and (max-width: 320px) {
 
 
 }
