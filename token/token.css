@@ -180,9 +180,7 @@
 	#igTokenSmall{
 		display:block;
 	}
-	.second-paragraph{
-		display:none;
-	}
+	
 	#tokenText1{
 		font-size:23px;
 	}
@@ -321,6 +319,7 @@
 
 }
 
+/**
 @media only screen and (max-width: 440px) {
 
 	#parallax9{
@@ -328,7 +327,9 @@
 	}
 
 }
+**/
 
+/**
 @media only screen and (max-width: 415px) {
 
 	.header1{
@@ -344,7 +345,6 @@
 		font-size:14px;
 	}
 
-	/* need these header adjustments to fit in mobile height */
 	#phase2Header{
 		margin-top: 100px !important;
 	}
@@ -369,4 +369,101 @@
 	.tokenBackground{
 		display:none;
 	}
+}
+
+**/
+
+/* iphone 6 7 8 */
+@media only screen and (min-device-width : 375px) and (max-device-width : 667px) and (orientation : portrait) {	
+	.tokenBackground{
+		display:none;
+	}
+
+	#dropToken {
+		height: 245px;
+		width: 60px;
+		margin-top: -85px;
+	}
+
+	#dot-img{
+		width: 7px !important;		
+		margin-right: 0px !important;		
+		margin-bottom: 10px;
+	}
+
+	.token-header{
+		margin-bottom: 0px !important;
+	}
+}
+
+/* iphone 6 7 8 plus */
+@media only screen and (min-device-width : 414px) and (max-device-width : 736px) and (orientation : portrait) {
+	.tokenBackground{
+		display:none;
+	}
+
+	#dropToken {
+		height: 245px;
+		width: 60px;
+		margin-top: -85px;
+	}
+
+	#dot-img{
+		width: 7px !important;		
+		margin-right: 0px !important;		
+		margin-bottom: 10px;
+	}
+
+	.token-header{
+		margin-bottom: 0px !important;
+	}
+
+}
+
+
+/* iphone x  */
+@media only screen and (min-device-width : 375px) and (max-device-width : 812px) and (-webkit-device-pixel-ratio : 3) and (orientation : portrait) {
+	.tokenBackground{
+		display:none;
+	}
+
+	#dropToken {
+		height: 245px;
+		width: 60px;
+		margin-top: -85px;
+	}
+
+	#dot-img{
+		width: 7px !important;		
+		margin-right: 0px !important;		
+		margin-bottom: 10px;
+	}
+	
+	.token-header{
+		margin-bottom: 0px !important;
+	}
+}
+
+/* galxay  */
+@media only screen and (max-width: 360px) {
+	.tokenBackground{
+		display:none;
+	}
+
+	#dropToken {
+		height: 245px;
+		width: 60px;
+		margin-top: -85px;
+	}
+
+	#dot-img{
+		width: 7px !important;		
+		margin-right: 0px !important;		
+		margin-bottom: 10px;
+	}
+
+	.token-header{
+		margin-bottom: 0px !important;
+	}
+
 }
