@@ -123,13 +123,60 @@
 }
 	
 
-/* iphone 7 8 */
-@media only screen and (max-width: 375px) and (max-device-height: 667px) {
-	
+/* iphone 6 7 8 */
+@media only screen and (min-device-width : 375px) and (max-device-width : 667px) and (orientation : portrait) {	
+	#whitepaperGraphic{
+		width:600px;
+		margin-right: 0px;
+		margin-left: 0px;			
+	}
+
+	#whitepaperBGGraphic{
+		margin-left: 0px;
+		margin-top: -130px;
+	}
+
+	.download{
+		font-size:12.5px;
+		padding-top:18px;
+	}
+
+	#buttonBase{
+		width: 188px;
+		height: 53px;
+	}
+
+	#dot-img{		
+		width: 7px !important;		
+		margin-right: 0px !important;		
+		margin-bottom: 10px;
+	}
+
+	#buttonBase{				
+		width: 140px;
+		height: 35px;
+	}
+
+	.download2{
+		display: none;
+	}
+
+	.download{
+		padding-top: 10px;		
+	}
+
+	#buttonBase{
+		margin-top: -30px;
+	}
+
+	#parallax6{
+		margin-top: -670px !important;	
+	}
 }
 
 /* iphone 6 7 8 plus */
-@media only screen and (max-width: 414px) and (max-device-height: 736px) {
+@media only screen and (min-device-width : 414px) and (max-device-width : 736px) and (orientation : portrait) {
+
 	#whitepaperGraphic{
 		width:600px;
 		margin-right: 0px;
@@ -181,7 +228,7 @@
 
 
 /* iphone x  */
-@media only screen and (max-width: 375px) and (max-device-height: 812px) {
+@media only screen and (min-device-width : 375px) and (max-device-width : 812px) and (-webkit-device-pixel-ratio : 3) and (orientation : portrait) {
 
 	#whitepaperGraphic{
 		width:600px;
@@ -234,4 +281,44 @@
 		margin-left: 0px;
 		margin-top: -130px;
 	}
+
+	#whitepaperGraphic{
+		width:600px;
+		margin-right: 0px;
+		margin-left: 0px;			
+	}
+
+	.download{
+		font-size:12.5px;
+		padding-top:18px;
+	}
+
+	#buttonBase{
+		width: 188px;
+		height: 53px;
+	}
+
+	#dot-img{		
+		width: 7px !important;		
+		margin-right: 0px !important;		
+		margin-bottom: 10px;
+	}
+
+	#buttonBase{				
+		width: 140px;
+		height: 35px;
+	}
+
+	.download2{
+		display: none;
+	}
+
+	.download{
+		padding-top: 10px;		
+	}
+
+	#buttonBase{
+		margin-top: -30px;
+	}
+
 }

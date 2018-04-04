@@ -121,8 +121,31 @@ main .container{
 	}
 }
 
-/* iphone 6+, 6s+, 7+, 8+  */
-@media only screen and (max-width: 414px) {
+/* iphone 6 7 8 */
+@media only screen and (min-device-width : 375px) and (max-device-width : 667px) and (orientation : portrait) {
+	.hide-375{
+		display:none;
+	}
+
+	.text-main{
+		font-size: 23px !important;
+	}
+
+	.text-category{
+		font-size: 24px !important;
+	}
+
+	.text-sub-category{
+		font-size: 17px !important;
+	}
+
+	.text-desc{
+		font-size: 13px !important;
+	}
+}
+
+/* iphone 6 7 8 plus */
+@media only screen and (min-device-width : 414px) and (max-device-width : 736px) and (orientation : portrait) {
 
 	.hide-375{
 		display:none;
@@ -153,26 +176,8 @@ main .container{
 	}
 }
 
-/* iphone x 7 8  */
-@media only screen and (max-width: 375px) {
-
-}
-
-/* galxay  */
-@media only screen and (max-width: 360px) {
-
-
-
-}
-
-/* iphone 3,4,5  */
-@media only screen and (max-width: 320px) {
-
-
-}
-
 /* iphone x  */
-@media only screen and (max-width: 375px) and (max-device-height: 812px) {
+@media only screen and (min-device-width : 375px) and (max-device-width : 812px) and (-webkit-device-pixel-ratio : 3) and (orientation : portrait) {
 	.text-main{
 		font-size: 23px !important;
 	}
@@ -190,6 +195,29 @@ main .container{
 	}
 }
 
-/* iphone 6+, 6s+, 7+, 8+  */
+/* galxay  */
+@media only screen and (max-width: 360px) {
+	
+	.hide-375{
+		display:none;
+	}
+
+	.text-main{
+		font-size: 23px !important;
+	}
+
+	.text-category{
+		font-size: 24px !important;
+	}
+
+	.text-sub-category{
+		font-size: 17px !important;
+	}
+
+	.text-desc{
+		font-size: 13px !important;
+	}
+}
+
 
 /* end of mobile */

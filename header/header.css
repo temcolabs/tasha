@@ -168,8 +168,8 @@
 	}
 }
 
-/* iphone 7 8 */
-@media only screen and (max-width: 375px) and (max-device-height: 667px) {
+/* iphone 6 7 8 */
+@media only screen and (min-device-width : 375px) and (max-device-width : 667px) and (orientation : portrait) {
 	#parallax1 {
 		min-height: 825px !important;
 	}	
@@ -184,7 +184,7 @@
 }
 
 /* iphone 6 7 8 plus */
-@media only screen and (max-width: 414px) and (max-device-height: 736px) {
+@media only screen and (min-device-width : 414px) and (max-device-width : 736px) and (orientation : portrait) {
 	#parallax1 {
 		min-height: 890px
 	}	
@@ -200,7 +200,7 @@
 }
 
 /* iphone x  */
-@media only screen and (max-width: 375px) and (max-device-height: 812px) {
+@media only screen and (min-device-width : 375px) and (max-device-width : 812px) and (-webkit-device-pixel-ratio : 3) and (orientation : portrait) {
 	#parallax1 {
 		min-height: 970px;
 	}
