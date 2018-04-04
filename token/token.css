@@ -418,6 +418,10 @@
 		margin-left: 18px !important;
 		margin-top: 100px;
 	}
+
+	#parallax10 {
+		height: 3560px ;
+	}
 }
 
 /* iphone 6 7 8 plus */
@@ -466,6 +470,9 @@
 		margin-top: 100px;
 	}
 
+	#parallax10 {
+		height: 3560px ;
+	}
 }
 
 
@@ -514,6 +521,10 @@
 		margin-left: 18px !important;
 		margin-top: 100px;
 	}
+
+	#parallax10 {
+		height: 3560px ;
+	}
 }
 
 /* galxay  */
@@ -559,6 +570,10 @@
 		width: 60px !important;
 		margin-left: 18px !important;
 		margin-top: 100px;
+	}
+
+	#parallax10 {
+		height: 3560px ;
 	}
 
 }
