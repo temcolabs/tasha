@@ -171,7 +171,7 @@
 /* iphone 7 8 */
 @media only screen and (max-width: 375px) and (max-device-height: 667px) {
 	#parallax1 {
-		min-height: 780px !important;
+		min-height: 825px !important;
 	}	
 
 	#headerCubeLeft {	
@@ -186,7 +186,7 @@
 /* iphone 6 7 8 plus */
 @media only screen and (max-width: 414px) and (max-device-height: 736px) {
 	#parallax1 {
-		min-height: 850px
+		min-height: 890px
 	}	
 
 	#headerCubeLeft {	
@@ -202,7 +202,7 @@
 /* iphone x  */
 @media only screen and (max-width: 375px) and (max-device-height: 812px) {
 	#parallax1 {
-		min-height: 930px;
+		min-height: 970px;
 	}
 	
 	#headerCubeLeft {
@@ -220,7 +220,7 @@
 /* galxay  */
 @media only screen and (max-width: 360px) {
 	#parallax1 {
-		min-height: 755px !important;
+		min-height: 790px !important;
 	}
 
 	#headerCubeLeft {	
