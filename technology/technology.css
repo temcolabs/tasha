@@ -152,19 +152,9 @@
 @media only screen and (min-device-width : 375px) and (max-device-width : 667px) and (orientation : portrait) {
 	#cubeDropImg {
 		height: 207px;
-		margin-left: 180px;
+		margin-left: 150px;
 		width: 70px;
-	}
-}
-
-/* iphone 6 7 8 plus */
-@media only screen and (min-device-width : 414px) and (max-device-width : 736px) and (orientation : portrait) {
-
-	#cubeDropImg {
-		height: 170px;
-   		margin-left: 175px;
-    	width: 60px;
-    	margin-top: 0px;
+		margin-top: -30px;
 	}
 
 	#igTechnologySmall {
@@ -173,6 +163,7 @@
 
 	#technologyHeader{
 		font-size: 38.5px;
+		margin-top: 0px;
 	}
 
 	#bgTechnologyTop{
@@ -186,6 +177,46 @@
 	#technology-dot{
 		display: none;
 	}
+
+	#parallax6{
+		min-height: 0px;
+	}
+}
+
+/* iphone 6 7 8 plus */
+@media only screen and (min-device-width : 414px) and (max-device-width : 736px) and (orientation : portrait) {
+	
+	#cubeDropImg {
+		height: 170px;
+   		margin-left: 170px !important;
+    	width: 60px;
+    	margin-top: -30px;
+	}
+
+	#igTechnologySmall {
+		max-width:400px;
+	}
+
+	#technologyHeader{
+		font-size: 38.5px;
+		margin-top: 0px;
+	}
+
+	#bgTechnologyTop{
+		display:none;
+	}
+
+	#bgTechnologyBottom{
+		display:none;
+	}
+
+	#technology-dot{
+		display: none;
+	}
+
+	#parallax6{
+		min-height: 0px;
+	}
 }
 
 
@@ -194,8 +225,34 @@
 
 	#cubeDropImg {
 		height: 207px;
-		margin-left: 180px;
+		margin-left: 150px;
 		width: 70px;
+		margin-top: -30px;
+	}
+
+	#igTechnologySmall {
+		max-width:400px;
+	}
+
+	#technologyHeader{
+		font-size: 38.5px;
+		margin-top: 0px;
+	}
+
+	#bgTechnologyTop{
+		display:none;
+	}
+
+	#bgTechnologyBottom{
+		display:none;
+	}
+
+	#technology-dot{
+		display: none;
+	}
+
+	#parallax6{
+		min-height: 0px;
 	}
 }
 
@@ -203,9 +260,35 @@
 @media only screen and (max-width: 360px) {
 	
 	#cubeDropImg {
-		margin-top: 0px;
+		margin-top: -30px;
 		height: 170px;
 		margin-left: 150px;
 		width: 60px;
 	}
+
+	#igTechnologySmall {
+		max-width:400px;
+	}
+
+	#technologyHeader{
+		font-size: 38.5px;
+		margin-top: 0px;
+	}
+
+	#bgTechnologyTop{
+		display:none;
+	}
+
+	#bgTechnologyBottom{
+		display:none;
+	}
+
+	#technology-dot{
+		display: none;
+	}
+
+	#parallax6{
+		min-height: 0px;
+	}
+	
 }
