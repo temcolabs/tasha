@@ -46,6 +46,14 @@
 	color: #ffffff;
 }
 
+#download-button{
+	background:url('../img/BUTTON BASE@2x.png');
+	background-repeat:no-repeat;
+	text-align:center;
+    width: 255px;
+    height: 71px;
+}
+
 @media only screen and (max-width: 1400px) {
 
 	#phone{
@@ -90,6 +98,7 @@
 
 }
 
+/**
 @media only screen and (max-width: 400px) {
 
 	#prototypeBGGraphic{
@@ -104,7 +113,121 @@
 		left: 0px;
 	}
 
-	#prototype{
-		
+}
+
+**/
+
+
+/* iphone 6 7 8 */
+@media only screen and (min-device-width : 375px) and (max-device-width : 667px) and (orientation : portrait) {	
+	#dot-rev-img{		
+		width: 7px !important;		
+		margin-right: 0px !important;		
+		margin-bottom: 10px;
 	}
+	
+	
+	#download-button{
+		width: 120px;
+		height: 30px;
+	}
+
+	#prototypeHeader {
+		margin-top: 350px;
+	}
+
+	
+	#download-desc{
+		padding-top: 8px !important;
+	}
+
+	#parallax7{
+		height: 1000px;
+	}
+
+}
+
+/* iphone 6 7 8 plus */
+@media only screen and (min-device-width : 414px) and (max-device-width : 736px) and (orientation : portrait) {
+	#dot-img{		
+		width: 7px !important;		
+		margin-right: 0px !important;		
+		margin-bottom: 10px;
+	}
+	
+	#download-button{
+		width: 120px;
+		height: 30px;
+	}
+
+	#prototypeHeader {
+		margin-top: 350px;
+	}
+
+	
+	#download-desc{
+		padding-top: 8px !important;
+	}
+
+	#parallax7{
+		height: 1000px;
+	}
+
+}
+
+
+/* iphone x  */
+@media only screen and (min-device-width : 375px) and (max-device-width : 812px) and (-webkit-device-pixel-ratio : 3) and (orientation : portrait) {
+	#dot-img{		
+		width: 7px !important;		
+		margin-right: 0px !important;		
+		margin-bottom: 10px;
+	}
+
+	
+	#download-button{
+		width: 120px;
+		height: 30px;
+	}
+
+	#prototypeHeader {
+		margin-top: 350px;
+	}
+
+	
+	#download-desc{
+		padding-top: 8px !important;
+	}
+
+	#parallax7{
+		height: 1000px;
+	}
+	
+}
+
+/* galxay  */
+@media only screen and (max-width: 360px) {
+	#dot-img{		
+		width: 7px !important;		
+		margin-right: 0px !important;		
+		margin-bottom: 10px;
+	}
+
+	#download-button{
+		width: 120px;
+		height: 30px;
+	}
+
+	#prototypeHeader {
+		margin-top: 350px;
+	}
+
+	#download-desc{
+		padding-top: 8px !important;
+	}
+
+	#parallax7{
+		height: 1000px;
+	}
+
 }
