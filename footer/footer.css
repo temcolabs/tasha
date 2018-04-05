@@ -33,14 +33,16 @@ footer .material-icons{
 footer a:hover{
 	text-decoration:none;
 }
-
+footer .social-media{display:inline-block;text-align:center;}
+footer .social-media a{font-size:0;display:inline-block;}
 footer .social-media img {
-	width: 41px;
-	height: 40px;
-	margin-right:14px;
+	width: 50px;
+	height: 50px;
+	margin:7px;
 }
 
 .footer-logo{
 	object-fit: contain;
 	font-family: 'object-fit: contain;';
 }
+.white-line{width:100%;max-width: 330px;height: 2px;margin:29px auto;background-color: #ffffff;}

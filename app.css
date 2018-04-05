@@ -6,6 +6,11 @@ body,html{
 	font-family: 'Raleway', sans-serif;
 	background-color:#fff;
 	overflow-x:hidden;
+	
+}
+
+body{
+	position:relative;
 }
 
 .transparent{
@@ -151,6 +156,10 @@ main .container{
 /* iphone 6 7 8 plus */
 @media only screen and (min-device-width : 414px) and (max-device-width : 736px) and (orientation : portrait) {
 
+	overflowing_content_div { 
+		overflow:hidden; 
+	}
+
 	.hide-375{
 		display:none;
 	}
@@ -228,10 +237,6 @@ main .container{
 
 	.text-desc{
 		font-size: 13px !important;
-	}
-
-	.text-small{
-		font-size: 12px !important;
 	}
 }
 
