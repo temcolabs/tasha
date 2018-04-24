@@ -18,7 +18,7 @@
 	height:4075px;
 	background-color:#fff;
 	padding-top:200px;
-    --display:none;
+	margin-top: 100px;    
 }
 
 #dropToken{
@@ -416,7 +416,7 @@
 	#drop-roadmap-img{
 		width: 60px !important;
 		margin-left: 18px !important;
-		margin-top: 100px;
+		margin-top: 0px;
 	}
 
 	#parallax10 {
@@ -467,7 +467,7 @@
 	#drop-roadmap-img{
 		width: 60px !important;
 		margin-left: 18px !important;
-		margin-top: 100px;
+		margin-top: 0px;
 	}
 
 	#parallax10 {
@@ -519,7 +519,7 @@
 	#drop-roadmap-img{
 		width: 60px !important;
 		margin-left: 18px !important;
-		margin-top: 100px;
+		margin-top: 0px;
 	}
 
 	#parallax10 {
@@ -569,7 +569,7 @@
 	#drop-roadmap-img{
 		width: 60px !important;
 		margin-left: 18px !important;
-		margin-top: 100px;
+		margin-top: 0px;
 	}
 
 	#parallax10 {

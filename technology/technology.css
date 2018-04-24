@@ -17,8 +17,7 @@
 	/*background-image: url(../img/cube_drop.png);*/
 	height: 307px;
 	background-position-y: bottom;
-	background-size: cover;
-	margin-left: 700px;
+	background-size: cover;	
 }
 
 #igTechnology, #igTechnologySmall{
@@ -67,6 +66,10 @@
 	width:300px;
 }
 
+#dropTechnology{
+	text-align: center;
+}
+
 @media only screen and (max-width: 1050px) {
 
 	#igTechnology {
@@ -76,6 +79,7 @@
 	#dropTechnology{
 		height:276.3px;
 		margin-top: -118px;
+		text-align: center;
 	}
 
 	#parallax6 {
@@ -114,6 +118,7 @@
 	#dropTechnology{
 		height:245.6px;
 		margin-top:-106px;
+		text-align: center;
 	}
 
 }
@@ -144,6 +149,7 @@
 
 	#dropTechnology{
 		margin-top:-129px;
+		text-align: center;
 	}
 }
 
